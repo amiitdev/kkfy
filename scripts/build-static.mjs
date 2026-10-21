@@ -33,11 +33,19 @@ for (const f of await fs.readdir(path.join(DATA, "covers"))) {
   copied++;
 }
 
+/** "/api/cover/932a2749f3ca" -> "covers/932a2749f3ca.jpg".
+ *  The file is named after the TRACK it was extracted from, which is not the
+ *  same as the album id — using a.id here broke 75 of 76 album covers. */
+const coverFile = (url) => {
+  const id = url?.split("/").pop();
+  return id ? `covers/${id}.jpg` : null;
+};
+
 for (const t of lib.tracks) {
   t.src = `KK/${encodeURIComponent(t.file)}`;
-  t.cover = t.cover ? `covers/${t.id}.jpg` : null;
+  t.cover = coverFile(t.cover);
 }
-for (const a of lib.albums) a.cover = a.cover ? `covers/${a.id}.jpg` : null;
+for (const a of lib.albums) a.cover = coverFile(a.cover);
 
 const out = {
   generatedAt: lib.generatedAt,

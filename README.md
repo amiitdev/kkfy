@@ -6,11 +6,15 @@
 
 **Zero dependencies · four files of code · desktop and phone**
 
-[![Vercel](https://img.shields.io/badge/deploy-Vercel-000?style=flat-square&logo=vercel&logoColor=white)](#-quick-start)
+[![Vercel](https://img.shields.io/badge/live-kkfy.vercel.app-000?style=flat-square&logo=vercel&logoColor=white)](https://kkfy.vercel.app)
+[![GitHub](https://img.shields.io/badge/repo-amiitdev%2Fkkfy-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/amiitdev/kkfy)
 [![Node](https://img.shields.io/badge/node-22%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white)](#-quick-start)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen?style=flat-square)
 ![Songs](https://img.shields.io/badge/songs-99%20%C2%B7%208h32m-1ed760?style=flat-square)
 ![Code](https://img.shields.io/badge/code-MIT-blue?style=flat-square)
+
+**Live: [kkfy.vercel.app](https://kkfy.vercel.app)** · built with zero dependencies
+
 
 <img src="docs/screens/desktop-home.png" alt="KKfy home" width="92%" />
 
@@ -83,6 +87,26 @@ server.mjs   lib/scan.mjs   scripts/      the local server + scanner
 Both modes share one bundle of front-end code. At boot the app asks for
 `/api/library` first and falls back to `/library.json`, which is how it knows
 whether it is talking to the Node server or a static CDN.
+
+---
+
+## Live demo
+
+**[kkfy.vercel.app](https://kkfy.vercel.app)**
+
+The hosted build is just `public/` served as static files: the index, the covers and
+the MP3s. Vercel's CDN answers `Range` requests itself, so seeking works the same way
+it does against the local server:
+
+```console
+$ curl -s -H "Range: bytes=0-999" -D - -o /dev/null https://kkfy.vercel.app/KK/*.mp3 | grep -Ei "HTTP/|content-range"
+HTTP/2 206
+content-range: bytes 0-999/4783068
+```
+
+Deployments are git-based: push to `main`, Vercel builds, `kkfy.vercel.app` updates.
+The project was created with `vercel deploy` from this folder, which linked the
+GitHub repository `amiitdev/kkfy`.
 
 ---
 
