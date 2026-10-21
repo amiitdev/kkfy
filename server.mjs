@@ -24,7 +24,9 @@ const PUBLIC = path.join(ROOT, "public");
 const DATA = path.join(ROOT, "data");
 const CACHE = path.join(DATA, "covers");
 
-const MUSIC_DIR = process.env.KKFY_MUSIC || "/home/amit/Desktop/KK";
+// One music folder feeds both modes: the local server reads it directly, and
+// scripts/build-static.mjs scans the same folder for the static/Vercel build.
+const MUSIC_DIR = process.env.KKFY_MUSIC || path.join(PUBLIC, "KK");
 const PORT = Number(process.env.KKFY_PORT || 7770);
 
 /* ------------------------------------------------------------------ data --- */

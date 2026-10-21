@@ -110,6 +110,41 @@ GitHub repository `amiitdev/kkfy`.
 
 ---
 
+## Adding more songs later
+
+There is **one** music folder: `public/KK/`. It feeds both modes - the local
+server reads it directly, and the static build scans the same folder.
+
+```bash
+# 1. drop the files in
+cp ~/Downloads/*.mp3 public/KK/
+
+# 2. rescan: pulls tags + duration + cover art, cleans the junk out of them
+node scripts/build-static.mjs
+
+# 3. local only - reload the running server (or restart it)
+curl -X POST http://127.0.0.1:7770/api/rescan
+
+# 4. ship it: Vercel builds from GitHub, ~45 s later it is live
+git add public/KK public/covers public/library.json
+git commit -m "add: more KK songs"
+git push
+```
+
+If you skip step 2 the app keeps serving the old `public/library.json`, so new
+files stay invisible - the index is a file, not a live directory listing.
+
+| Want | Do |
+|---|---|
+| a different folder | `KKFY_MUSIC="/path/to/songs" node server.mjs` |
+| rescan without rebuilding the static files | `curl -X POST localhost:7770/api/rescan` |
+| see it locally before publishing | `node server.mjs` then open <http://127.0.0.1:7770> |
+
+Verified with a throwaway file: `99 → 100` tracks after `build-static.mjs`, the
+entry showed `src: "KK/zz-kkfy-test.mp3"`, then `100 → 99` once it was deleted.
+
+---
+
 ## Screenshots
 
 | Desktop | Album + queue |
@@ -191,7 +226,7 @@ Those exact strings became the `title` and `aria-label` of every control in KKfy
       |-- data/userstate.json  what you liked / created / last played
       |-- data/stats.json      play counts -> "Your top songs"
       v
-   ~/Desktop/KK/*.mp3   read-only, never modified
+   public/KK/*.mp3   the one music folder, read-only, never modified
 ```
 
 ---
