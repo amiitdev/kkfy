@@ -359,10 +359,11 @@ svg { width: 100%; height: 100%; display: block; }
 
   .topbar { gap: 8px; padding: 0 10px; }
   .logo { display: none; }
-  .home-btn { width: 40px; height: 40px; }
-  .search { flex: 1; height: 40px; }
+  .home-btn { width: 40px; height: 40px; flex: none; }
+  .search { flex: 1 1 auto; min-width: 0; height: 40px; }
+  .search > span:last-child, .search-divider { display: none; }
   .pill { display: none; }
-  .avatar { width: 40px; height: 40px; }
+  .avatar { width: 40px; height: 40px; flex: none; }
 
   .shell { grid-template-columns: 1fr; padding: 0; bottom: calc(var(--player) + 56px + env(safe-area-inset-bottom)); }
 
@@ -401,5 +402,15 @@ svg { width: 100%; height: 100%; display: block; }
     top: 0; bottom: 0; right: 0; width: min(92vw, 380px); border-radius: 0; z-index: 50;
   }
   .toast { bottom: calc(56px + var(--player) + 16px + env(safe-area-inset-bottom)); }
+}
+
+/* very narrow phones (and Android font scaling) */
+@media (max-width: 430px) {
+  .grid, .grid.wide { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+  .card { padding: 8px; }
+  .headline h1 { font-size: 26px; }
+  .headline h2 { font-size: 20px; }
+  .detail-title { font-size: 26px; }
+  .banner { font-size: 12px; padding: 10px 12px; }
 }
 
