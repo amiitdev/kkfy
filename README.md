@@ -24,20 +24,22 @@
 
 ## Table of contents
 
-- [Features](#-features)
-- [Quick start](#-quick-start)
-- [Screenshots](#-screenshots)
-- [Built by measuring the real Spotify](#-built-by-measuring-the-real-spotify)
-- [Architecture](#-architecture)
-- [HTTP contract](#-http-contract)
-- [Why Range requests matter](#-why-range-requests-matter)
-- [Cleaning tag junk](#-cleaning-tag-junk)
-- [Keyboard shortcuts](#-keyboard-shortcuts)
-- [Phone layout](#-phone-layout)
-- [Project structure](#-project-structure)
-- [Troubleshooting](#-troubleshooting)
-- [About the music files](#-about-the-music-files)
-- [License](#-license)
+- [Features](#features)
+- [Quick start](#quick-start)
+- [Live demo](#live-demo)
+- [Adding more songs later](#adding-more-songs-later)
+- [Screenshots](#screenshots)
+- [Built by measuring the real Spotify](#built-by-measuring-the-real-spotify)
+- [Architecture](#architecture)
+- [HTTP contract](#http-contract)
+- [Why Range requests matter](#why-range-requests-matter)
+- [Cleaning tag junk](#cleaning-tag-junk)
+- [Keyboard shortcuts](#keyboard-shortcuts)
+- [Phone layout](#phone-layout)
+- [Project structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
+- [About the music files](#about-the-music-files)
+- [License](#license)
 
 ---
 

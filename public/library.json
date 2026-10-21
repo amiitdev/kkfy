@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21T18:27:08.628Z",
+ "generatedAt": "2026-10-21T18:39:56.141Z",
  "tracks": [
   {
    "id": "5f91a82f96fd",
@@ -1406,6 +1406,22 @@
    "src": "KK/Tu%20Bhoola%20Jise%20-%20Airlift%20128%20Kbps.mp3"
   },
   {
+   "id": "ce162de17e99",
+   "file": "Tu Hi Meri Shab Hai Gangster 320 Kbps.mp3",
+   "title": "Tu Hi Meri Shab Hai",
+   "album": "Gangster",
+   "year": 2006,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 388,
+   "bitrate": 321,
+   "cover": "covers/ce162de17e99.jpg",
+   "addedAt": 1792607003270,
+   "src": "KK/Tu%20Hi%20Meri%20Shab%20Hai%20Gangster%20320%20Kbps.mp3"
+  },
+  {
    "id": "66468289878d",
    "file": "Tu Jo Mila - KK_128-(DJMaza).mp3",
    "title": "Tu Jo Mila",
@@ -2197,6 +2213,15 @@
    ]
   },
   {
+   "id": "67f7202fdd",
+   "name": "Gangster",
+   "year": 2006,
+   "cover": "covers/ce162de17e99.jpg",
+   "trackIds": [
+    "ce162de17e99"
+   ]
+  },
+  {
    "id": "9de8f4b71a",
    "name": "Taxi No. 9211",
    "year": 2006,
@@ -2385,6 +2410,6 @@
    "reason": "empty file (0 bytes)"
   }
  ],
- "totalSeconds": 30728,
+ "totalSeconds": 31116,
  "staticBuild": true
 }
