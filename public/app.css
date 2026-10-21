@@ -257,9 +257,9 @@ svg { width: 100%; height: 100%; display: block; }
 }
 .bar::-webkit-slider-thumb {
   -webkit-appearance: none; width: 12px; height: 12px; border-radius: 9999px; background: #fff;
-  opacity: 0; transition: opacity .1s;
+  opacity: 1; box-shadow: 0 0 0 3px rgba(0, 0, 0, .35); transition: transform .1s;
 }
-.bar:hover::-webkit-slider-thumb { opacity: 1; }
+.bar:hover::-webkit-slider-thumb { transform: scale(1.15); background: var(--accent); }
 .bar:hover { background: linear-gradient(90deg, var(--accent) var(--fill, 0%), #4d4d4d var(--fill, 0%)); }
 .bar::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 9999px; background: #fff; }
 
@@ -358,8 +358,10 @@ svg { width: 100%; height: 100%; display: block; }
   .desktop-only { display: none !important; }
 
   .topbar { gap: 8px; padding: 0 10px; }
-  .logo { display: none; }
+  .logo { width: 40px; height: 40px; }
+  .logo svg { width: 26px; height: 26px; }
   .home-btn { width: 40px; height: 40px; flex: none; }
+  .avatar { display: none; }
   .search { flex: 1 1 auto; min-width: 0; height: 40px; }
   .search > span:last-child, .search-divider { display: none; }
   .pill { display: none; }
