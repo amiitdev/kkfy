@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>KKfy — your local music</title>
+  <link rel="stylesheet" href="/app.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='%231ed760'/><path d='M7 15c3.5-1.6 7-1.6 10.2-.2M7.5 12c3-1.2 6.3-1.2 9.3.1M8 9c2.5-.9 5.1-.9 7.6.1' stroke='%23000' stroke-width='1.7' fill='none' stroke-linecap='round'/></svg>" />
+</head>
+<body>
+  <!-- fixed top bar: logo · home · search (the same three slots Spotify has) -->
+  <header class="topbar">
+    <a class="logo" href="#/home" aria-label="KKfy home" data-icon="logo"></a>
+    <a class="home-btn" href="#/home" aria-label="Home" data-icon="home"></a>
+    <div class="search">
+      <span data-icon="search"></span>
+      <input id="search-input" type="search" placeholder="What do you want to play?" aria-label="What do you want to play?" />
+      <span class="search-divider"></span>
+      <span data-icon="library" title="Your Library"></span>
+    </div>
+    <div class="topbar-right">
+      <a class="pill" href="#/songs">All songs</a>
+      <span class="avatar" title="Amit's library">A</span>
+    </div>
+  </header>
+
+  <div class="shell">
+    <!-- left rail: Your Library -->
+    <aside class="sidebar" id="sidebar">
+      <div class="side-head">
+        <h2>Your Library</h2>
+        <div class="side-actions">
+          <button class="icon-btn" id="new-playlist" title="Create playlist" aria-label="Create playlist" data-icon="plus"></button>
+          <button class="icon-btn side-close" id="side-close" title="Close" aria-label="Close library" data-icon="close"></button>
+        </div>
+      </div>
+      <div class="chips" id="lib-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="playlists">Playlists</button>
+        <button class="chip" data-filter="albums">Albums</button>
+        <button class="chip" data-filter="artists">Artists</button>
+      </div>
+      <div class="side-list" id="lib-list"></div>
+      <div class="side-foot" id="library-stats"></div>
+    </aside>
+    <div class="scrim" id="scrim" hidden></div>
+
+    <!-- scrolling content -->
+    <main class="main" id="main">
+      <div class="main-bg" id="main-bg"></div>
+      <div class="main-inner" id="view"></div>
+    </main>
+  </div>
+
+  <!-- the bottom bar REA measured at 66px on the real player -->
+  <footer class="player" id="player">
+    <div class="now-playing" data-act="open-sheet" title="Now playing view">
+      <img id="np-cover" alt="" hidden />
+      <div class="np-tile" id="np-tile" data-icon="note"></div>
+      <div class="np-meta">
+        <div class="np-title" id="np-title">Nothing playing</div>
+        <div class="np-artist" id="np-artist">Pick a song to start</div>
+      </div>
+      <button class="icon-btn np-like" id="like-btn" data-act="like" title="Save to Liked Songs" aria-label="Save to Liked Songs" data-icon="heart"></button>
+      <button class="icon-btn np-next mobile-only" data-act="next" title="Next" aria-label="Next" data-icon="next"></button>
+    </div>
+
+    <div class="player-center desktop-only">
+      <div class="controls">
+        <button class="icon-btn" id="shuffle-btn" data-act="shuffle" title="Enable shuffle" aria-label="Enable shuffle" data-icon="shuffle"></button>
+        <button class="icon-btn" data-act="prev" title="Previous" aria-label="Previous" data-icon="prev"></button>
+        <button class="play-btn" data-act="play" title="Play" aria-label="Play" data-icon="play"></button>
+        <button class="icon-btn" data-act="next" title="Next" aria-label="Next" data-icon="next"></button>
+        <button class="icon-btn" id="repeat-btn" data-act="repeat" title="Disable repeat" aria-label="Disable repeat" data-icon="repeat"></button>
+      </div>
+      <div class="progress-row">
+        <span class="time" id="cur-time">0:00</span>
+        <input id="seek" class="bar" data-act="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Change progress" />
+        <span class="time" id="dur-time">0:00</span>
+      </div>
+    </div>
+
+    <div class="player-right desktop-only">
+      <button class="icon-btn" id="queue-btn" title="Queue" aria-label="Queue" data-icon="queue"></button>
+      <button class="icon-btn" id="mute-btn" data-act="mute" title="Mute" aria-label="Mute" data-icon="volume"></button>
+      <input id="volume" class="bar vol" data-act="volume" type="range" min="0" max="100" value="80" step="1" aria-label="Change volume" />
+    </div>
+  </footer>
+
+  <!-- mobile-only bottom navigation -->
+  <nav class="mobile-nav mobile-only" id="mobile-nav">
+    <button data-nav="home" aria-label="Home"><span data-icon="home"></span>Home</button>
+    <button data-nav="search" aria-label="Search"><span data-icon="search"></span>Search</button>
+    <button data-nav="library" aria-label="Your Library"><span data-icon="library"></span>Library</button>
+  </nav>
+
+  <!-- right drawer: queue -->
+  <aside class="queue" id="queue" hidden>
+    <div class="queue-head">
+      <h3>Queue</h3>
+      <button class="icon-btn" id="queue-close" title="Close" aria-label="Close queue" data-icon="close"></button>
+    </div>
+    <div class="queue-body" id="queue-body"></div>
+  </aside>
+
+  <!-- full-screen "now playing" sheet (mobile, and via the ▲ button on desktop) -->
+  <section class="sheet" id="sheet" hidden aria-label="Now playing">
+    <div class="sheet-head">
+      <button class="icon-btn" data-act="close-sheet" title="Close" aria-label="Close now playing" data-icon="chevronDown"></button>
+      <div class="sheet-head-meta">
+        <div class="sheet-kicker">Now playing</div>
+        <div class="sheet-album" id="sheet-album"></div>
+      </div>
+      <button class="icon-btn" id="sheet-queue" title="Queue" aria-label="Queue" data-icon="queue"></button>
+    </div>
+    <img class="sheet-cover" id="sheet-cover" alt="" />
+    <div class="sheet-tile" id="sheet-tile" data-icon="note"></div>
+    <div class="sheet-meta">
+      <div>
+        <div class="sheet-title" id="sheet-title">Nothing playing</div>
+        <div class="sheet-artist" id="sheet-artist"></div>
+      </div>
+      <button class="icon-btn big" data-act="like" title="Save to Liked Songs" aria-label="Save to Liked Songs" data-icon="heart"></button>
+    </div>
+    <input id="sheet-seek" class="bar" data-act="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Change progress" />
+    <div class="sheet-times"><span id="sheet-cur">0:00</span><span id="sheet-dur">0:00</span></div>
+    <div class="sheet-controls">
+      <button class="icon-btn" data-act="shuffle" title="Shuffle" aria-label="Shuffle" data-icon="shuffle"></button>
+      <button class="icon-btn" data-act="prev" title="Previous" aria-label="Previous" data-icon="prev"></button>
+      <button class="play-btn big" data-act="play" title="Play" aria-label="Play" data-icon="play"></button>
+      <button class="icon-btn" data-act="next" title="Next" aria-label="Next" data-icon="next"></button>
+      <button class="icon-btn" data-act="repeat" title="Repeat" aria-label="Repeat" data-icon="repeat"></button>
+    </div>
+    <div class="sheet-volume">
+      <button class="icon-btn" data-act="mute" title="Mute" aria-label="Mute" data-icon="volume"></button>
+      <input id="sheet-volume" class="bar" data-act="volume" type="range" min="0" max="100" value="80" step="1" aria-label="Change volume" />
+    </div>
+  </section>
+
+  <audio id="audio" preload="metadata"></audio>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="/icons.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2390 @@
+{
+ "generatedAt": "2026-10-21T17:36:55.380Z",
+ "tracks": [
+  {
+   "id": "5f91a82f96fd",
+   "file": "Aankhon Me Teri.mp3",
+   "title": "Aankhon Mein Teri Ajab Si",
+   "album": "Om Shanti Om (2007)",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 244,
+   "bitrate": 132,
+   "cover": "covers/5f91a82f96fd.jpg",
+   "addedAt": 1791616443959,
+   "src": "KK/Aankhon%20Me%20Teri.mp3"
+  },
+  {
+   "id": "59fb9b371d40",
+   "file": "Aaya Re.mp3",
+   "title": "Aaya Re Koyi Dil Ko Churaane",
+   "album": "Jashnn",
+   "year": 2009,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 296,
+   "bitrate": 108,
+   "cover": "covers/59fb9b371d40.jpg",
+   "addedAt": 1791616443978,
+   "src": "KK/Aaya%20Re.mp3"
+  },
+  {
+   "id": "ca7c2730bf66",
+   "file": "abhi.mp3",
+   "title": "Abhi Abhi",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 343,
+   "bitrate": 130,
+   "cover": "covers/ca7c2730bf66.jpg",
+   "addedAt": 1791616446289,
+   "src": "KK/abhi.mp3"
+  },
+  {
+   "id": "112c97f72ff7",
+   "file": "Alvida - Life In A Metro 128 Kbps.mp3",
+   "title": "Alvida",
+   "album": "Life In A Metro",
+   "year": 2007,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 339,
+   "bitrate": 130,
+   "cover": "covers/112c97f72ff7.jpg",
+   "addedAt": 1791616444005,
+   "src": "KK/Alvida%20-%20Life%20In%20A%20Metro%20128%20Kbps.mp3"
+  },
+  {
+   "id": "91e78de16b53",
+   "file": "Are Are Are - Makkhi 128 Kbps.mp3",
+   "title": "Are Are Are",
+   "album": "Makkhi",
+   "year": 2012,
+   "artists": [
+    "M. M. Keeravani",
+    "KK",
+    "Sahithi Galidevara"
+   ],
+   "artist": "M. M. Keeravani",
+   "duration": 251,
+   "bitrate": 130,
+   "cover": "covers/91e78de16b53.jpg",
+   "addedAt": 1791616444023,
+   "src": "KK/Are%20Are%20Are%20-%20Makkhi%20128%20Kbps.mp3"
+  },
+  {
+   "id": "4c3054684572",
+   "file": "Aur Tanha - Love Aaj Kal 128 Kbps.mp3",
+   "title": "Aur Tanha",
+   "album": "Love Aaj Kal (2020)",
+   "year": 2020,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 296,
+   "bitrate": 129,
+   "cover": "covers/4c3054684572.jpg",
+   "addedAt": 1791616444044,
+   "src": "KK/Aur%20Tanha%20-%20Love%20Aaj%20Kal%20128%20Kbps.mp3"
+  },
+  {
+   "id": "f8504cf6e929",
+   "file": "Awarapan Banjarapan.mp3",
+   "title": "Awarapan Banjarapan",
+   "album": "Jism (2003)",
+   "year": 2003,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 420,
+   "bitrate": 128,
+   "cover": "covers/f8504cf6e929.jpg",
+   "addedAt": 1791616444075,
+   "src": "KK/Awarapan%20Banjarapan.mp3"
+  },
+  {
+   "id": "8598128fe072",
+   "file": "Aye Bekhabar Zeher 128 Kbps.mp3",
+   "title": "Aye Bekhabar",
+   "album": "Zeher",
+   "year": 2005,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 343,
+   "bitrate": 129,
+   "cover": "covers/8598128fe072.jpg",
+   "addedAt": 1791616444098,
+   "src": "KK/Aye%20Bekhabar%20Zeher%20128%20Kbps.mp3"
+  },
+  {
+   "id": "701058fc95a8",
+   "file": "Bardaasht.mp3",
+   "title": "Bardaasht Nahin Kar Sakta",
+   "album": "Humraaz (2002)",
+   "year": 2002,
+   "artists": [
+    "KK",
+    "Sunidhi Chauhan"
+   ],
+   "artist": "KK",
+   "duration": 336,
+   "bitrate": 128,
+   "cover": "covers/701058fc95a8.jpg",
+   "addedAt": 1791616444119,
+   "src": "KK/Bardaasht.mp3"
+  },
+  {
+   "id": "c188b9264f83",
+   "file": "Barhaan Dil (Male Version) - Mr. Singh Mrs. Mehta 128 Kbps.mp3",
+   "title": "Barhaan Dil (Male Version)",
+   "album": "Mr. Singh Mrs. Mehta",
+   "year": 2010,
+   "artists": [
+    "Shaarang Dev Pandit",
+    "Ustad Shujaat Hussain Khan",
+    "KK"
+   ],
+   "artist": "Shaarang Dev Pandit",
+   "duration": 310,
+   "bitrate": 129,
+   "cover": "covers/c188b9264f83.jpg",
+   "addedAt": 1791616444139,
+   "src": "KK/Barhaan%20Dil%20(Male%20Version)%20-%20Mr.%20Singh%20Mrs.%20Mehta%20128%20Kbps.mp3"
+  },
+  {
+   "id": "23de8ae94841",
+   "file": "Bas Ek Pal - Bas Ek Pal 128 Kbps.mp3",
+   "title": "Bas Ek Pal",
+   "album": "Bas Ek Pal",
+   "year": 2006,
+   "artists": [
+    "KK",
+    "Dominique Cerejo"
+   ],
+   "artist": "KK",
+   "duration": 336,
+   "bitrate": 130,
+   "cover": "covers/23de8ae94841.jpg",
+   "addedAt": 1791616444161,
+   "src": "KK/Bas%20Ek%20Pal%20-%20Bas%20Ek%20Pal%20128%20Kbps.mp3"
+  },
+  {
+   "id": "799789dcac16",
+   "file": "Beete Lamhe - KK_128-(DJMaza).mp3",
+   "title": "Beete Lamhe",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 301,
+   "bitrate": 146,
+   "cover": "covers/799789dcac16.jpg",
+   "addedAt": 1791616444182,
+   "src": "KK/Beete%20Lamhe%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "9cdd0dcd3f72",
+   "file": "Beetein Lamhein (Unplugged) KK.mp3",
+   "title": "Beetein Lamhein (Unplugged) - .La",
+   "album": "Bollywood Artist Unplugged",
+   "year": 2017,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 385,
+   "bitrate": 257,
+   "cover": "covers/9cdd0dcd3f72.jpg",
+   "addedAt": 1791616444238,
+   "src": "KK/Beetein%20Lamhein%20(Unplugged)%20KK.mp3"
+  },
+  {
+   "id": "76351029fdc9",
+   "file": "Bin Tum.mp3",
+   "title": "Bin Tum",
+   "album": "Dus Kahaniyaan",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 301,
+   "bitrate": 131,
+   "cover": "covers/76351029fdc9.jpg",
+   "addedAt": 1791616444258,
+   "src": "KK/Bin%20Tum.mp3"
+  },
+  {
+   "id": "ab1ffa7264bf",
+   "file": "Chand Ki Roshni Home Delivery 128 Kbps.mp3",
+   "title": "Chand Ki Roshni",
+   "album": "Home Delivery",
+   "year": 2005,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 306,
+   "bitrate": 130,
+   "cover": "covers/ab1ffa7264bf.jpg",
+   "addedAt": 1791616444278,
+   "src": "KK/Chand%20Ki%20Roshni%20Home%20Delivery%20128%20Kbps.mp3"
+  },
+  {
+   "id": "932a2749f3ca",
+   "file": "Dil Ibaadat - Tum Mile 128 Kbps.mp3",
+   "title": "Dil Ibaadat",
+   "album": "Tum Mile",
+   "year": 2009,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 329,
+   "bitrate": 130,
+   "cover": "covers/932a2749f3ca.jpg",
+   "addedAt": 1791616444320,
+   "src": "KK/Dil%20Ibaadat%20-%20Tum%20Mile%20128%20Kbps.mp3"
+  },
+  {
+   "id": "509fb1ca0782",
+   "file": "Dil Ibaadat (Rock) - Tum Mile 128 Kbps.mp3",
+   "title": "Dil Ibaadat (Rock)",
+   "album": "Tum Mile",
+   "year": 2009,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 327,
+   "bitrate": 130,
+   "cover": "covers/509fb1ca0782.jpg",
+   "addedAt": 1791616444299,
+   "src": "KK/Dil%20Ibaadat%20(Rock)%20-%20Tum%20Mile%20128%20Kbps.mp3"
+  },
+  {
+   "id": "55568970b196",
+   "file": "Dil Ki Purani Sadak - Sadak 2 128 Kbps.mp3",
+   "title": "Dil Ki Purani Sadak",
+   "album": "Sadak 2",
+   "year": 2020,
+   "artists": [
+    "Samidh Mukherjee",
+    "Urvi",
+    "KK"
+   ],
+   "artist": "Samidh Mukherjee",
+   "duration": 289,
+   "bitrate": 130,
+   "cover": "covers/55568970b196.jpg",
+   "addedAt": 1791616444338,
+   "src": "KK/Dil%20Ki%20Purani%20Sadak%20-%20Sadak%202%20128%20Kbps.mp3"
+  },
+  {
+   "id": "e0295f679878",
+   "file": "Dil Kyun Yeh Mera - Kites 128 Kbps.mp3",
+   "title": "Dil Kyun Yeh Mera",
+   "album": "Kites",
+   "year": 2010,
+   "artists": [
+    "Rajesh Roshan",
+    "KK"
+   ],
+   "artist": "Rajesh Roshan",
+   "duration": 337,
+   "bitrate": 130,
+   "cover": "covers/e0295f679878.jpg",
+   "addedAt": 1791616444360,
+   "src": "KK/Dil%20Kyun%20Yeh%20Mera%20-%20Kites%20128%20Kbps.mp3"
+  },
+  {
+   "id": "a60f16471b47",
+   "file": "Dilnashin Dilnashin.mp3",
+   "title": "Dilnashin Dilnashin",
+   "album": "Aashiq Banaya Aapne",
+   "year": 2005,
+   "artists": [
+    "Himesh Reshammiya",
+    "KK"
+   ],
+   "artist": "Himesh Reshammiya",
+   "duration": 392,
+   "bitrate": 129,
+   "cover": "covers/a60f16471b47.jpg",
+   "addedAt": 1791616444386,
+   "src": "KK/Dilnashin%20Dilnashin.mp3"
+  },
+  {
+   "id": "bc87c21c3b72",
+   "file": "Duniya Ne Dil Toda - Showbiz 128 Kbps.mp3",
+   "title": "Duniya Ne Dil Toda",
+   "album": "Showbiz",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 240,
+   "bitrate": 130,
+   "cover": "covers/bc87c21c3b72.jpg",
+   "addedAt": 1791616444401,
+   "src": "KK/Duniya%20Ne%20Dil%20Toda%20-%20Showbiz%20128%20Kbps.mp3"
+  },
+  {
+   "id": "b766c674e1b0",
+   "file": "Dus Bahane.mp3",
+   "title": "Dus Bahane",
+   "album": "Dus",
+   "year": 2005,
+   "artists": [
+    "Sunidhi Chauhan",
+    "Sonu Nigam",
+    "KK",
+    "Shaan",
+    "Babul Supriyo"
+   ],
+   "artist": "Sunidhi Chauhan",
+   "duration": 207,
+   "bitrate": 131,
+   "cover": "covers/b766c674e1b0.jpg",
+   "addedAt": 1791616444415,
+   "src": "KK/Dus%20Bahane.mp3"
+  },
+  {
+   "id": "cbcdb3b16086",
+   "file": "Ek Nazar Mein Bhi - Taxi No. 9211 128 Kbps.mp3",
+   "title": "Ek Nazar Mein Bhi",
+   "album": "Taxi No. 9211",
+   "year": 2006,
+   "artists": [
+    "KK",
+    "Sunidhi Chauhan"
+   ],
+   "artist": "KK",
+   "duration": 278,
+   "bitrate": 130,
+   "cover": "covers/cbcdb3b16086.jpg",
+   "addedAt": 1791616444432,
+   "src": "KK/Ek%20Nazar%20Mein%20Bhi%20-%20Taxi%20No.%209211%20128%20Kbps.mp3"
+  },
+  {
+   "id": "a337bc785b1b",
+   "file": "Ek Pal Ke Liye.mp3",
+   "title": "Ek Pal Ke Liye",
+   "album": "Ankahee",
+   "year": 2006,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 356,
+   "bitrate": 321,
+   "cover": "covers/a337bc785b1b.jpg",
+   "addedAt": 1791616444497,
+   "src": "KK/Ek%20Pal%20Ke%20Liye.mp3"
+  },
+  {
+   "id": "5220dd50b380",
+   "file": "Gulon Mein (Upbeat Version) - Sikandar 128 Kbps.mp3",
+   "title": "Gulon Mein (Upbeat Version)",
+   "album": "Sikandar",
+   "year": 2009,
+   "artists": [
+    "Sandesh Shandilya",
+    "KK"
+   ],
+   "artist": "Sandesh Shandilya",
+   "duration": 318,
+   "bitrate": 129,
+   "cover": "covers/5220dd50b380.jpg",
+   "addedAt": 1791616444518,
+   "src": "KK/Gulon%20Mein%20(Upbeat%20Version)%20-%20Sikandar%20128%20Kbps.mp3"
+  },
+  {
+   "id": "8d0e1e0467f2",
+   "file": "Haan Main Jitni Martaba - All The Best 128 Kbps.mp3",
+   "title": "Haan Main Jitni Martaba",
+   "album": "All The Best",
+   "year": 2009,
+   "artists": [
+    "KK",
+    "Yashita Sharma"
+   ],
+   "artist": "KK",
+   "duration": 349,
+   "bitrate": 130,
+   "cover": "covers/8d0e1e0467f2.jpg",
+   "addedAt": 1791616444541,
+   "src": "KK/Haan%20Main%20Jitni%20Martaba%20-%20All%20The%20Best%20128%20Kbps.mp3"
+  },
+  {
+   "id": "564451bc06bc",
+   "file": "Haan Tu Hain - Jannat_128-(DJMaza).mp3",
+   "title": "Haan Tu Hain",
+   "album": "Jannat",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 325,
+   "bitrate": 144,
+   "cover": "covers/564451bc06bc.jpg",
+   "addedAt": 1791616444563,
+   "src": "KK/Haan%20Tu%20Hain%20-%20Jannat_128-(DJMaza).mp3"
+  },
+  {
+   "id": "d4adf6bf8fb8",
+   "file": "Hai Junoon - New York 128 Kbps.mp3",
+   "title": "Hai Junoon",
+   "album": "New York",
+   "year": 2009,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 331,
+   "bitrate": 136,
+   "cover": "covers/d4adf6bf8fb8.jpg",
+   "addedAt": 1791616444586,
+   "src": "KK/Hai%20Junoon%20-%20New%20York%20128%20Kbps.mp3"
+  },
+  {
+   "id": "67f27977a912",
+   "file": "Hum Rahe Ya Na Rahe By..kk.mp3",
+   "title": "Hum Rahe Ya Na Rahe",
+   "album": "Friendship Day Special Songs",
+   "year": 2014,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 364,
+   "bitrate": 125,
+   "cover": "covers/67f27977a912.jpg",
+   "addedAt": 1791616444609,
+   "src": "KK/Hum%20Rahe%20Ya%20Na%20Rahe%20By..kk.mp3"
+  },
+  {
+   "id": "a353b78b1a79",
+   "file": "Humko Pyar Hua (Chal Chale) - Ready 128 Kbps.mp3",
+   "title": "Humko Pyar Hua (Chal Chale)",
+   "album": "Ready",
+   "year": 2011,
+   "artists": [
+    "Pritam",
+    "KK",
+    "Tulsi Kumar"
+   ],
+   "artist": "Pritam",
+   "duration": 329,
+   "bitrate": 130,
+   "cover": "covers/a353b78b1a79.jpg",
+   "addedAt": 1791616444630,
+   "src": "KK/Humko%20Pyar%20Hua%20(Chal%20Chale)%20-%20Ready%20128%20Kbps.mp3"
+  },
+  {
+   "id": "c9e692cb57f5",
+   "file": "I Am In Love - Once Upon A Time In Mumbaai 128 Kbps.mp3",
+   "title": "I Am In Love",
+   "album": "Once Upon A Time In Mumbaai",
+   "year": 2010,
+   "artists": [
+    "Pritam",
+    "KK",
+    "Dominique Cerejo"
+   ],
+   "artist": "Pritam",
+   "duration": 287,
+   "bitrate": 131,
+   "cover": "covers/c9e692cb57f5.jpg",
+   "addedAt": 1791616444648,
+   "src": "KK/I%20Am%20In%20Love%20-%20Once%20Upon%20A%20Time%20In%20Mumbaai%20128%20Kbps.mp3"
+  },
+  {
+   "id": "b8e26a52849b",
+   "file": "Jaane Kaise - Raqeeb 128 Kbps.mp3",
+   "title": "Jaane Kaise",
+   "album": "Raqeeb",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 373,
+   "bitrate": 130,
+   "cover": "covers/b8e26a52849b.jpg",
+   "addedAt": 1791616444672,
+   "src": "KK/Jaane%20Kaise%20-%20Raqeeb%20128%20Kbps.mp3"
+  },
+  {
+   "id": "9b7fa84f0df6",
+   "file": "Jaane Ye Kya Hua - Karthik Calling Karthik 128 Kbps.mp3",
+   "title": "Jaane Ye Kya Hua",
+   "album": "Karthik Calling Karthik",
+   "year": 2010,
+   "artists": [
+    "Shankar-Ehsaan-Loy",
+    "KK"
+   ],
+   "artist": "Shankar-Ehsaan-Loy",
+   "duration": 245,
+   "bitrate": 131,
+   "cover": "covers/9b7fa84f0df6.jpg",
+   "addedAt": 1791616444688,
+   "src": "KK/Jaane%20Ye%20Kya%20Hua%20-%20Karthik%20Calling%20Karthik%20128%20Kbps.mp3"
+  },
+  {
+   "id": "bd4f8cc5fcbb",
+   "file": "Jaavedaan Hai 1920 Evil Returns 128 Kbps.mp3",
+   "title": "Jaavedaan Hai",
+   "album": "1920 - Evil Returns",
+   "year": 2012,
+   "artists": [
+    "Chirantann Bhatt",
+    "KK",
+    "Suzanne D'Mello"
+   ],
+   "artist": "Chirantann Bhatt",
+   "duration": 347,
+   "bitrate": 129,
+   "cover": "covers/bd4f8cc5fcbb.jpg",
+   "addedAt": 1791616444711,
+   "src": "KK/Jaavedaan%20Hai%201920%20Evil%20Returns%20128%20Kbps.mp3"
+  },
+  {
+   "id": "aa5df0ca9aa0",
+   "file": "Jab Kabhi 128 Kbps.mp3",
+   "title": "Jab Kabhi",
+   "album": "Jhankaar Beats",
+   "year": 2003,
+   "artists": [
+    "Vishal-Shekhar",
+    "KK",
+    "Mahalakshmi Iyer"
+   ],
+   "artist": "Vishal-Shekhar",
+   "duration": 279,
+   "bitrate": 129,
+   "cover": "covers/aa5df0ca9aa0.jpg",
+   "addedAt": 1791616444729,
+   "src": "KK/Jab%20Kabhi%20128%20Kbps.mp3"
+  },
+  {
+   "id": "a20b7bf36847",
+   "file": "Jannatein Kahan 128 Kbps.mp3",
+   "title": "Jannatein Kahan",
+   "album": "Jannat 2",
+   "year": 2012,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 228,
+   "bitrate": 130,
+   "cover": "covers/a20b7bf36847.jpg",
+   "addedAt": 1791616444744,
+   "src": "KK/Jannatein%20Kahan%20128%20Kbps.mp3"
+  },
+  {
+   "id": "acbbdc2064f6",
+   "file": "Jeena isi ka naam.mp3",
+   "title": "Jeena Isi Ka Naam Hai (Title Song)",
+   "album": "Jeena Isi Ka Naam Hai (2017)",
+   "year": 2017,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 325,
+   "bitrate": 130,
+   "cover": "covers/acbbdc2064f6.jpg",
+   "addedAt": 1791616444767,
+   "src": "KK/Jeena%20isi%20ka%20naam.mp3"
+  },
+  {
+   "id": "637d5493a8b8",
+   "file": "Kabhi Aayine Pe Likha Tujhe 128 Kbps.mp3",
+   "title": "Kabhi Aayine Pe Likha Tujhe",
+   "album": "Hate Story 2",
+   "year": 2014,
+   "artists": [
+    "Rashid Khan",
+    "KK"
+   ],
+   "artist": "Rashid Khan",
+   "duration": 354,
+   "bitrate": 129,
+   "cover": "covers/637d5493a8b8.jpg",
+   "addedAt": 1791616444858,
+   "src": "KK/Kabhi%20Aayine%20Pe%20Likha%20Tujhe%20128%20Kbps.mp3"
+  },
+  {
+   "id": "0c258bde5b61",
+   "file": "Kabhi Khushboo - Saaya 128 Kbps.mp3",
+   "title": "Kabhi Khushboo",
+   "album": "Saaya",
+   "year": 2003,
+   "artists": [
+    "Anu Malik",
+    "KK"
+   ],
+   "artist": "Anu Malik",
+   "duration": 521,
+   "bitrate": 129,
+   "cover": "covers/0c258bde5b61.jpg",
+   "addedAt": 1791616444920,
+   "src": "KK/Kabhi%20Khushboo%20-%20Saaya%20128%20Kbps.mp3"
+  },
+  {
+   "id": "4b0642bf2778",
+   "file": "Kahaani (Male) - Kahaani 128 Kbps.mp3",
+   "title": "Kahaani (Male)",
+   "album": "Kahaani",
+   "year": 2012,
+   "artists": [
+    "Vishal-Shekhar",
+    "KK",
+    "Vishal Dadlani"
+   ],
+   "artist": "Vishal-Shekhar",
+   "duration": 267,
+   "bitrate": 130,
+   "cover": "covers/4b0642bf2778.jpg",
+   "addedAt": 1791616444938,
+   "src": "KK/Kahaani%20(Male)%20-%20Kahaani%20128%20Kbps.mp3"
+  },
+  {
+   "id": "0def04a93bbb",
+   "file": "Kaisa Ye Raaz Hai - RAAZ - The Mystery Continues 128 Kbps.mp3",
+   "title": "Kaisa Ye Raaz Hai",
+   "album": "RAAZ - The Mystery Continues",
+   "year": 2008,
+   "artists": [
+    "Pranay M. Rijia",
+    "KK"
+   ],
+   "artist": "Pranay M. Rijia",
+   "duration": 378,
+   "bitrate": 129,
+   "cover": "covers/0def04a93bbb.jpg",
+   "addedAt": 1791616444962,
+   "src": "KK/Kaisa%20Ye%20Raaz%20Hai%20-%20RAAZ%20-%20The%20Mystery%20Continues%20128%20Kbps.mp3"
+  },
+  {
+   "id": "fb4cbfd4afef",
+   "file": "Kaise Bataun Tujhe.mp3",
+   "title": "Kaise Bataun Tujhe",
+   "album": "3G",
+   "year": 2013,
+   "artists": [
+    "KK",
+    "Sonal Chauhan"
+   ],
+   "artist": "KK",
+   "duration": 283,
+   "bitrate": 146,
+   "cover": "covers/fb4cbfd4afef.jpg",
+   "addedAt": 1791616444982,
+   "src": "KK/Kaise%20Bataun%20Tujhe.mp3"
+  },
+  {
+   "id": "221ea29bf49c",
+   "file": "Kal Ki Hi Baat Hai - Chhichhore 128 Kbps.mp3",
+   "title": "Kal Ki Hi Baat Hai",
+   "album": "Chhichhore",
+   "year": 2019,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 241,
+   "bitrate": 130,
+   "cover": "covers/221ea29bf49c.jpg",
+   "addedAt": 1791616444998,
+   "src": "KK/Kal%20Ki%20Hi%20Baat%20Hai%20-%20Chhichhore%20128%20Kbps.mp3"
+  },
+  {
+   "id": "aa0d3e9166e3",
+   "file": "Khuda Jaane - K.K_128-(DJMaza)(1).mp3",
+   "title": "Khuda Jaane",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK",
+    "Shilpa Rao"
+   ],
+   "artist": "KK",
+   "duration": 333,
+   "bitrate": 138,
+   "cover": "covers/aa0d3e9166e3.jpg",
+   "addedAt": 1791616445022,
+   "src": "KK/Khuda%20Jaane%20-%20K.K_128-(DJMaza)(1).mp3"
+  },
+  {
+   "id": "b50219715b4a",
+   "file": "Khwabon Khwabon 128 Kbps.mp3",
+   "title": "Khwabon Khwabon",
+   "album": "Force",
+   "year": 2011,
+   "artists": [
+    "Harris Jayaraj",
+    "KK",
+    "Suchitra"
+   ],
+   "artist": "Harris Jayaraj",
+   "duration": 321,
+   "bitrate": 130,
+   "cover": "covers/b50219715b4a.jpg",
+   "addedAt": 1791616445044,
+   "src": "KK/Khwabon%20Khwabon%20128%20Kbps.mp3"
+  },
+  {
+   "id": "1e420026a657",
+   "file": "Kya Mujhe Pyar Hai - KK_128-(DJMaza).mp3",
+   "title": "Kya Mujhe Pyar Hai",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 267,
+   "bitrate": 133,
+   "cover": "covers/1e420026a657.jpg",
+   "addedAt": 1791616445062,
+   "src": "KK/Kya%20Mujhe%20Pyar%20Hai%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "97a9bd80a998",
+   "file": "Labon Ko.mp3",
+   "title": "Labon Ko",
+   "album": "Bhool Bhulaiyaa",
+   "year": 2007,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 344,
+   "bitrate": 130,
+   "cover": "covers/97a9bd80a998.jpg",
+   "addedAt": 1791616445085,
+   "src": "KK/Labon%20Ko.mp3"
+  },
+  {
+   "id": "7b7d65abc199",
+   "file": "Luk Chup Jaana Nazar Ko.mp3",
+   "title": "Luk Chup Jaana Nazar Ko",
+   "album": "Action Replayy",
+   "year": 2010,
+   "artists": [
+    "Pritam Chakraborty",
+    "KK",
+    "Tulsi Kumar"
+   ],
+   "artist": "Pritam Chakraborty",
+   "duration": 262,
+   "bitrate": 130,
+   "cover": "covers/7b7d65abc199.jpg",
+   "addedAt": 1791616445103,
+   "src": "KK/Luk%20Chup%20Jaana%20Nazar%20Ko.mp3"
+  },
+  {
+   "id": "17b1188124c1",
+   "file": "Main Agar - Film Version (Tubelight) 128 Kbps.mp3",
+   "title": "Main Agar - Film Version",
+   "album": "Tubelight",
+   "year": 2017,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 209,
+   "bitrate": 131,
+   "cover": "covers/17b1188124c1.jpg",
+   "addedAt": 1791616445117,
+   "src": "KK/Main%20Agar%20-%20Film%20Version%20(Tubelight)%20128%20Kbps.mp3"
+  },
+  {
+   "id": "28a0638ebf11",
+   "file": "Main Khuda - Male - (Raag.Fm).mp3",
+   "title": "Main Khuda - Male",
+   "album": "Paanch",
+   "year": null,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 366,
+   "bitrate": 128,
+   "cover": "covers/28a0638ebf11.jpg",
+   "addedAt": 1791616445142,
+   "src": "KK/Main%20Khuda%20-%20Male%20-%20(Raag.Fm).mp3"
+  },
+  {
+   "id": "266bb93f90c7",
+   "file": "Main Kya Hoon - Love Aaj Kal 128 Kbps.mp3",
+   "title": "Main Kya Hoon",
+   "album": "Love Aaj Kal",
+   "year": 2009,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 349,
+   "bitrate": 130,
+   "cover": "covers/266bb93f90c7.jpg",
+   "addedAt": 1791616445164,
+   "src": "KK/Main%20Kya%20Hoon%20-%20Love%20Aaj%20Kal%20128%20Kbps.mp3"
+  },
+  {
+   "id": "ce6b64668fcc",
+   "file": "Maine Dil Se Kaha - Rog 128 Kbps.mp3",
+   "title": "Maine Dil Se Kaha",
+   "album": "Rog",
+   "year": 2005,
+   "artists": [
+    "M. M. Keeravani",
+    "KK"
+   ],
+   "artist": "M. M. Keeravani",
+   "duration": 313,
+   "bitrate": 129,
+   "cover": "covers/ce6b64668fcc.jpg",
+   "addedAt": 1791616445203,
+   "src": "KK/Maine%20Dil%20Se%20Kaha%20-%20Rog%20128%20Kbps.mp3"
+  },
+  {
+   "id": "5fbb1d788c62",
+   "file": "Mat Aazma Re - Murder 3 128 Kbps.mp3",
+   "title": "Mat Aazma Re",
+   "album": "Murder 3",
+   "year": 2013,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 248,
+   "bitrate": 129,
+   "cover": "covers/5fbb1d788c62.jpg",
+   "addedAt": 1791616445221,
+   "src": "KK/Mat%20Aazma%20Re%20-%20Murder%203%20128%20Kbps.mp3"
+  },
+  {
+   "id": "c5353f44ea8d",
+   "file": "Mera Pehla Pehla Pyaar - MP3 - Mera Pehla Pehla Pyaar 128 Kbps.mp3",
+   "title": "Mera Pehla Pehla Pyaar",
+   "album": "MP3 - Mera Pehla Pehla Pyaar",
+   "year": 2007,
+   "artists": [
+    "Vipin Mishra",
+    "Ashutosh Pathak",
+    "Dhruv Ghanekar",
+    "KK"
+   ],
+   "artist": "Vipin Mishra",
+   "duration": 275,
+   "bitrate": 130,
+   "cover": "covers/c5353f44ea8d.jpg",
+   "addedAt": 1791616445240,
+   "src": "KK/Mera%20Pehla%20Pehla%20Pyaar%20-%20MP3%20-%20Mera%20Pehla%20Pehla%20Pyaar%20128%20Kbps.mp3"
+  },
+  {
+   "id": "85c21b1feba4",
+   "file": "Mere Bina Crook 128 Kbps.mp3",
+   "title": "Mere Bina",
+   "album": "Crook",
+   "year": 2010,
+   "artists": [
+    "Pritam",
+    "Nikhil D'souza"
+   ],
+   "artist": "Pritam",
+   "duration": 290,
+   "bitrate": 131,
+   "cover": "covers/85c21b1feba4.jpg",
+   "addedAt": 1791616445262,
+   "src": "KK/Mere%20Bina%20Crook%20128%20Kbps.mp3"
+  },
+  {
+   "id": "59d6b00fd2fd",
+   "file": "Mere Bina Unplugged Crook 128 Kbps.mp3",
+   "title": "Mere Bina (Unplugged)",
+   "album": "Crook",
+   "year": 2010,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 295,
+   "bitrate": 130,
+   "cover": "covers/59d6b00fd2fd.jpg",
+   "addedAt": 1791616445282,
+   "src": "KK/Mere%20Bina%20Unplugged%20Crook%20128%20Kbps.mp3"
+  },
+  {
+   "id": "81724bdb960b",
+   "file": "Mere Palak Ka Tu Hi Sitara - Showbiz 128 Kbps.mp3",
+   "title": "Mere Palak Ka Tu Hi Sitara",
+   "album": "Showbiz",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 338,
+   "bitrate": 130,
+   "cover": "covers/81724bdb960b.jpg",
+   "addedAt": 1791616445305,
+   "src": "KK/Mere%20Palak%20Ka%20Tu%20Hi%20Sitara%20-%20Showbiz%20128%20Kbps.mp3"
+  },
+  {
+   "id": "5d6e073bfcd3",
+   "file": "Meri Maa (Reprise) - Yaariyan 128 Kbps.mp3",
+   "title": "Meri Maa (Reprise)",
+   "album": "Yaariyan",
+   "year": 2013,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 284,
+   "bitrate": 130,
+   "cover": "covers/5d6e073bfcd3.jpg",
+   "addedAt": 1791616445346,
+   "src": "KK/Meri%20Maa%20(Reprise)%20-%20Yaariyan%20128%20Kbps.mp3"
+  },
+  {
+   "id": "d9517acb90e4",
+   "file": "Mujhe Kuch Kehna Hai - Mujhe Kucch Kehna Hai 128 Kbps.mp3",
+   "title": "Mujhe Kuch Kehna Hai",
+   "album": "Mujhe Kucch Kehna Hai",
+   "year": 2001,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 424,
+   "bitrate": 129,
+   "cover": "covers/d9517acb90e4.jpg",
+   "addedAt": 1791616445374,
+   "src": "KK/Mujhe%20Kuch%20Kehna%20Hai%20-%20Mujhe%20Kucch%20Kehna%20Hai%20128%20Kbps.mp3"
+  },
+  {
+   "id": "4a69ec95843e",
+   "file": "Nazar Nazar - Nazar 128 Kbps.mp3",
+   "title": "Nazar Nazar",
+   "album": "Nazar",
+   "year": 2005,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 414,
+   "bitrate": 129,
+   "cover": "covers/4a69ec95843e.jpg",
+   "addedAt": 1791616445403,
+   "src": "KK/Nazar%20Nazar%20-%20Nazar%20128%20Kbps.mp3"
+  },
+  {
+   "id": "1d7968a8f83c",
+   "file": "Nazrein kaha soti hai.mp3",
+   "title": "Nazrein Kahan Soti Hain",
+   "album": "Jashnn",
+   "year": 2009,
+   "artists": [
+    "KK",
+    "Shreya Ghoshal"
+   ],
+   "artist": "KK",
+   "duration": 332,
+   "bitrate": 105,
+   "cover": "covers/1d7968a8f83c.jpg",
+   "addedAt": 1791616445420,
+   "src": "KK/Nazrein%20kaha%20soti%20hai.mp3"
+  },
+  {
+   "id": "87c49f73320f",
+   "file": "O Jaana - Tere Naam 128 Kbps.mp3",
+   "title": "O Jaana",
+   "album": "Tere Naam",
+   "year": 2003,
+   "artists": [
+    "Udit Narayan",
+    "Alka Yagnik",
+    "Shaan",
+    "KK",
+    "Kamaal Khan"
+   ],
+   "artist": "Udit Narayan",
+   "duration": 326,
+   "bitrate": 130,
+   "cover": "covers/87c49f73320f.jpg",
+   "addedAt": 1791616445444,
+   "src": "KK/O%20Jaana%20-%20Tere%20Naam%20128%20Kbps.mp3"
+  },
+  {
+   "id": "39f13b4dd1cc",
+   "file": "O Mama - 7 Khoon Maaf 128 Kbps.mp3",
+   "title": "O Mama",
+   "album": "Khoon Maaf",
+   "year": 2011,
+   "artists": [
+    "Vishal Bhardwaj",
+    "KK",
+    "Clinton Cerejo"
+   ],
+   "artist": "Vishal Bhardwaj",
+   "duration": 294,
+   "bitrate": 129,
+   "cover": "covers/39f13b4dd1cc.jpg",
+   "addedAt": 1791616445479,
+   "src": "KK/O%20Mama%20-%207%20Khoon%20Maaf%20128%20Kbps.mp3"
+  },
+  {
+   "id": "d65bed830055",
+   "file": "O Meri Jaan - Tum Mile 128 Kbps.mp3",
+   "title": "O Meri Jaan",
+   "album": "Tum Mile",
+   "year": 2009,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 298,
+   "bitrate": 130,
+   "cover": "covers/d65bed830055.jpg",
+   "addedAt": 1791616445498,
+   "src": "KK/O%20Meri%20Jaan%20-%20Tum%20Mile%20128%20Kbps.mp3"
+  },
+  {
+   "id": "219a60d8e1bd",
+   "file": "O Meri Jaan 128 Kbps.mp3",
+   "title": "O Meri Jaan",
+   "album": "Raaz Reboot",
+   "year": 2016,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 277,
+   "bitrate": 130,
+   "cover": "covers/219a60d8e1bd.jpg",
+   "addedAt": 1791616445515,
+   "src": "KK/O%20Meri%20Jaan%20128%20Kbps.mp3"
+  },
+  {
+   "id": "33e17e14572f",
+   "file": "O meri jaan(LIM).mp3",
+   "title": "O Meri Jaan",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 306,
+   "bitrate": 133,
+   "cover": "covers/33e17e14572f.jpg",
+   "addedAt": 1791616445535,
+   "src": "KK/O%20meri%20jaan(LIM).mp3"
+  },
+  {
+   "id": "c667a2b73eb8",
+   "file": "Oh Lala Re - Taarzan - The Wonder Car.mp3",
+   "title": "Oh Lala Re",
+   "album": "Taarzan - The Wonder Car",
+   "year": 2004,
+   "artists": [
+    "Alka Yagnik",
+    "KK"
+   ],
+   "artist": "Alka Yagnik",
+   "duration": 316,
+   "bitrate": 133,
+   "cover": "covers/c667a2b73eb8.jpg",
+   "addedAt": 1791616445553,
+   "src": "KK/Oh%20Lala%20Re%20-%20Taarzan%20-%20The%20Wonder%20Car.mp3"
+  },
+  {
+   "id": "fd22612013bd",
+   "file": "Piya Aaye Na.mp3",
+   "title": "Piya Aaye Na",
+   "album": "Aashiqui 2",
+   "year": 2013,
+   "artists": [
+    "Tulsi Kumar",
+    "KK"
+   ],
+   "artist": "Tulsi Kumar",
+   "duration": 286,
+   "bitrate": 131,
+   "cover": "covers/fd22612013bd.jpg",
+   "addedAt": 1791616445571,
+   "src": "KK/Piya%20Aaye%20Na.mp3"
+  },
+  {
+   "id": "f172f3157738",
+   "file": "Rafta Rafta - Raaz 3 128 Kbps.mp3",
+   "title": "Rafta Rafta",
+   "album": "Raaz 3",
+   "year": 2012,
+   "artists": [
+    "Jeet Gannguli",
+    "KK"
+   ],
+   "artist": "Jeet Gannguli",
+   "duration": 272,
+   "bitrate": 131,
+   "cover": "covers/f172f3157738.jpg",
+   "addedAt": 1791616445586,
+   "src": "KK/Rafta%20Rafta%20-%20Raaz%203%20128%20Kbps.mp3"
+  },
+  {
+   "id": "83c04070c5cd",
+   "file": "Saanson Ke.mp3",
+   "title": "Saanson Ke",
+   "album": "Singles",
+   "year": null,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 243,
+   "bitrate": 192,
+   "cover": null,
+   "addedAt": 1791616445608,
+   "src": "KK/Saanson%20Ke.mp3"
+  },
+  {
+   "id": "4ebfefb4dae0",
+   "file": "Sach Keh Raha Hai Deewana - KK_128-(DJMaza).mp3",
+   "title": "Sach Keh Raha Hai Deewana",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 329,
+   "bitrate": 131,
+   "cover": "covers/4ebfefb4dae0.jpg",
+   "addedAt": 1791616445629,
+   "src": "KK/Sach%20Keh%20Raha%20Hai%20Deewana%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "2a3d8546ab16",
+   "file": "Sajde Ki Ye Hai Lakhoin - Khatta Meetha 128 Kbps.mp3",
+   "title": "Sajde Ki Ye Hai Lakhoin",
+   "album": "Khatta Meetha",
+   "year": 2010,
+   "artists": [
+    "Pritam",
+    "Sunidhi Chauhan",
+    "KK",
+    "Shahid"
+   ],
+   "artist": "Pritam",
+   "duration": 308,
+   "bitrate": 130,
+   "cover": "covers/2a3d8546ab16.jpg",
+   "addedAt": 1791616445649,
+   "src": "KK/Sajde%20Ki%20Ye%20Hai%20Lakhoin%20-%20Khatta%20Meetha%20128%20Kbps.mp3"
+  },
+  {
+   "id": "7e9b7e039594",
+   "file": "Sang Hoon Tere - Jannat 2_128-(DJMaza).mp3",
+   "title": "Sang Hoon Tere",
+   "album": "Jannat 2",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 314,
+   "bitrate": 140,
+   "cover": "covers/7e9b7e039594.jpg",
+   "addedAt": 1791616445670,
+   "src": "KK/Sang%20Hoon%20Tere%20-%20Jannat%202_128-(DJMaza).mp3"
+  },
+  {
+   "id": "a05655042201",
+   "file": "Soniye - Heartless 128 Kbps.mp3",
+   "title": "Soniye",
+   "album": "Heartless",
+   "year": 2014,
+   "artists": [
+    "Gaurav Dagaonkar",
+    "KK"
+   ],
+   "artist": "Gaurav Dagaonkar",
+   "duration": 301,
+   "bitrate": 130,
+   "cover": "covers/a05655042201.jpg",
+   "addedAt": 1791616445688,
+   "src": "KK/Soniye%20-%20Heartless%20128%20Kbps.mp3"
+  },
+  {
+   "id": "4d6c2b750f42",
+   "file": "Soniye.mp3",
+   "title": "Soniye",
+   "album": "Aksar",
+   "year": 2005,
+   "artists": [
+    "Himesh Reshammiya",
+    "Sunidhi Chauhan",
+    "KK"
+   ],
+   "artist": "Himesh Reshammiya",
+   "duration": 297,
+   "bitrate": 322,
+   "cover": "covers/4d6c2b750f42.jpg",
+   "addedAt": 1791616445736,
+   "src": "KK/Soniye.mp3"
+  },
+  {
+   "id": "8a6bc7f003d5",
+   "file": "Tadap Tadap Ke - KK_128-(DJMaza).mp3",
+   "title": "Tadap Tadap Ke",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 399,
+   "bitrate": 131,
+   "cover": "covers/8a6bc7f003d5.jpg",
+   "addedAt": 1791616445761,
+   "src": "KK/Tadap%20Tadap%20Ke%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "d9a92f9fba8d",
+   "file": "Tanha Tere Bagair.mp3",
+   "title": "Tanha Tere Bagair",
+   "album": "Ahista Ahista (2006)",
+   "year": 2006,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 305,
+   "bitrate": 322,
+   "cover": "covers/d9a92f9fba8d.jpg",
+   "addedAt": 1791616445805,
+   "src": "KK/Tanha%20Tere%20Bagair.mp3"
+  },
+  {
+   "id": "b2fca2d14474",
+   "file": "Tera Mera Rishta - Male (Jalebi) 128 Kbps.mp3",
+   "title": "Tera Mera Rishta - Male",
+   "album": "Jalebi",
+   "year": 2018,
+   "artists": [
+    "Tanishk Bagchi",
+    "KK"
+   ],
+   "artist": "Tanishk Bagchi",
+   "duration": 293,
+   "bitrate": 129,
+   "cover": "covers/b2fca2d14474.jpg",
+   "addedAt": 1791616445823,
+   "src": "KK/Tera%20Mera%20Rishta%20-%20Male%20(Jalebi)%20128%20Kbps.mp3"
+  },
+  {
+   "id": "6a0de57dfaad",
+   "file": "Tere Is Jahan Mein - Rog 128 Kbps.mp3",
+   "title": "Tere Is Jahan Mein",
+   "album": "Rog",
+   "year": 2005,
+   "artists": [
+    "M. M. Keeravani",
+    "KK"
+   ],
+   "artist": "M. M. Keeravani",
+   "duration": 332,
+   "bitrate": 129,
+   "cover": "covers/6a0de57dfaad.jpg",
+   "addedAt": 1791616445845,
+   "src": "KK/Tere%20Is%20Jahan%20Mein%20-%20Rog%20128%20Kbps.mp3"
+  },
+  {
+   "id": "f24b669d9afa",
+   "file": "Teri Tamanna - The Train 128 Kbps.mp3",
+   "title": "Teri Tamanna",
+   "album": "The Train",
+   "year": 2007,
+   "artists": [
+    "KK",
+    "Zubeen Garg",
+    "Shilpa Rao"
+   ],
+   "artist": "KK",
+   "duration": 380,
+   "bitrate": 130,
+   "cover": "covers/f24b669d9afa.jpg",
+   "addedAt": 1791616445869,
+   "src": "KK/Teri%20Tamanna%20-%20The%20Train%20128%20Kbps.mp3"
+  },
+  {
+   "id": "8fe2e232c0f5",
+   "file": "Teri Yaadon Mein - KK_128-(DJMaza).mp3",
+   "title": "Teri Yaadon Mein",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK",
+    "Shreya Ghoshal"
+   ],
+   "artist": "KK",
+   "duration": 287,
+   "bitrate": 133,
+   "cover": "covers/8fe2e232c0f5.jpg",
+   "addedAt": 1791616445886,
+   "src": "KK/Teri%20Yaadon%20Mein%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "193d15215d32",
+   "file": "Tu Aashiqui Hai 128 Kbps.mp3",
+   "title": "Tu Aashiqui Hai",
+   "album": "Jhankaar Beats",
+   "year": 2003,
+   "artists": [
+    "Vishal-Shekhar",
+    "KK"
+   ],
+   "artist": "Vishal-Shekhar",
+   "duration": 370,
+   "bitrate": 129,
+   "cover": "covers/193d15215d32.jpg",
+   "addedAt": 1791616445908,
+   "src": "KK/Tu%20Aashiqui%20Hai%20128%20Kbps.mp3"
+  },
+  {
+   "id": "39db7c6fcf4b",
+   "file": "Tu Bhoola Jise - Airlift 128 Kbps.mp3",
+   "title": "Tu Bhoola Jise",
+   "album": "Airlift",
+   "year": 2015,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 272,
+   "bitrate": 130,
+   "cover": "covers/39db7c6fcf4b.jpg",
+   "addedAt": 1791616445925,
+   "src": "KK/Tu%20Bhoola%20Jise%20-%20Airlift%20128%20Kbps.mp3"
+  },
+  {
+   "id": "66468289878d",
+   "file": "Tu Jo Mila - KK_128-(DJMaza).mp3",
+   "title": "Tu Jo Mila",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 244,
+   "bitrate": 158,
+   "cover": "covers/66468289878d.jpg",
+   "addedAt": 1791616445942,
+   "src": "KK/Tu%20Jo%20Mila%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "5f913c8e7ad5",
+   "file": "Tu Mujhe Soch Kabhi - Zindagi Tere Naam 128 Kbps.mp3",
+   "title": "Tu Mujhe Soch Kabhi",
+   "album": "Zindagi Tere Naam",
+   "year": 2012,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 268,
+   "bitrate": 130,
+   "cover": "covers/5f913c8e7ad5.jpg",
+   "addedAt": 1791616445959,
+   "src": "KK/Tu%20Mujhe%20Soch%20Kabhi%20-%20Zindagi%20Tere%20Naam%20128%20Kbps.mp3"
+  },
+  {
+   "id": "bae98d8e7dec",
+   "file": "Tu Mujhse Jab Se Mila Hai - Showbiz 128 Kbps.mp3",
+   "title": "Tu Mujhse Jab Se Mila Hai",
+   "album": "Showbiz",
+   "year": 2007,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 270,
+   "bitrate": 130,
+   "cover": "covers/bae98d8e7dec.jpg",
+   "addedAt": 1791616445975,
+   "src": "KK/Tu%20Mujhse%20Jab%20Se%20Mila%20Hai%20-%20Showbiz%20128%20Kbps.mp3"
+  },
+  {
+   "id": "d915772ae092",
+   "file": "Tuhi Mere Hum Navaa - Knockout 128 Kbps.mp3",
+   "title": "Tuhi Mere Hum Navaa",
+   "album": "Knockout",
+   "year": 2010,
+   "artists": [
+    "Gourov Dg",
+    "KK"
+   ],
+   "artist": "Gourov Dg",
+   "duration": 277,
+   "bitrate": 130,
+   "cover": "covers/d915772ae092.jpg",
+   "addedAt": 1791616445992,
+   "src": "KK/Tuhi%20Mere%20Hum%20Navaa%20-%20Knockout%20128%20Kbps.mp3"
+  },
+  {
+   "id": "328da07af0b8",
+   "file": "Tujh Sang Lagee - Special 26 128 Kbps.mp3",
+   "title": "Tujh Sang Lagee",
+   "album": "Special 26",
+   "year": 2013,
+   "artists": [
+    "M. M. Keeravani",
+    "KK"
+   ],
+   "artist": "M. M. Keeravani",
+   "duration": 253,
+   "bitrate": 130,
+   "cover": "covers/328da07af0b8.jpg",
+   "addedAt": 1791616446009,
+   "src": "KK/Tujh%20Sang%20Lagee%20-%20Special%2026%20128%20Kbps.mp3"
+  },
+  {
+   "id": "31e79306b873",
+   "file": "Tujhi Mein [320 kbps].mp3",
+   "title": "Tujhi Mein",
+   "album": "Crook",
+   "year": 2010,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 301,
+   "bitrate": 323,
+   "cover": "covers/31e79306b873.jpg",
+   "addedAt": 1791616446055,
+   "src": "KK/Tujhi%20Mein%20%5B320%20kbps%5D.mp3"
+  },
+  {
+   "id": "30433a251a33",
+   "file": "Tum Ho Mera Pyar - KK_128-(DJMaza).mp3",
+   "title": "Tum Ho Mera Pyar",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK",
+    "Chirantann Bhatt"
+   ],
+   "artist": "KK",
+   "duration": 307,
+   "bitrate": 133,
+   "cover": "covers/30433a251a33.jpg",
+   "addedAt": 1791616446075,
+   "src": "KK/Tum%20Ho%20Mera%20Pyar%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "07c400c6e649",
+   "file": "Yaara Re Roy 128 Kbps.mp3",
+   "title": "Yaara Re",
+   "album": "Roy",
+   "year": 2015,
+   "artists": [
+    "KK",
+    "Ankit Tiwari"
+   ],
+   "artist": "KK",
+   "duration": 298,
+   "bitrate": 130,
+   "cover": "covers/07c400c6e649.jpg",
+   "addedAt": 1791616446093,
+   "src": "KK/Yaara%20Re%20Roy%20128%20Kbps.mp3"
+  },
+  {
+   "id": "1c31042bfdde",
+   "file": "Yaaron-Dosti(PaglaSongs).mp3",
+   "title": "Yaaron Dosti",
+   "album": "Friendship Day Mp3 Songs",
+   "year": 2020,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 263,
+   "bitrate": 194,
+   "cover": "covers/1c31042bfdde.jpg",
+   "addedAt": 1791616446117,
+   "src": "KK/Yaaron-Dosti(PaglaSongs).mp3"
+  },
+  {
+   "id": "5045d301b99c",
+   "file": "Ye Fizaein - Main Hoon Na 128 Kbps.mp3",
+   "title": "Ye Fizaein",
+   "album": "Main Hoon Na",
+   "year": 2004,
+   "artists": [
+    "KK",
+    "Alka Yagnik"
+   ],
+   "artist": "KK",
+   "duration": 317,
+   "bitrate": 130,
+   "cover": "covers/5045d301b99c.jpg",
+   "addedAt": 1791616446136,
+   "src": "KK/Ye%20Fizaein%20-%20Main%20Hoon%20Na%20128%20Kbps.mp3"
+  },
+  {
+   "id": "683741fd037d",
+   "file": "Yeh Kahan Mil Gaye.mp3",
+   "title": "Yeh Kahan Mil Gaye",
+   "album": "Humsafar",
+   "year": null,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 326,
+   "bitrate": 321,
+   "cover": "covers/683741fd037d.jpg",
+   "addedAt": 1791616446178,
+   "src": "KK/Yeh%20Kahan%20Mil%20Gaye.mp3"
+  },
+  {
+   "id": "cc08a1f9fa7d",
+   "file": "Yeh Tanhai - Pal 128 Kbps.mp3",
+   "title": "Yeh Tanhai",
+   "album": "Pal",
+   "year": 1999,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 261,
+   "bitrate": 130,
+   "cover": "covers/cc08a1f9fa7d.jpg",
+   "addedAt": 1791616446194,
+   "src": "KK/Yeh%20Tanhai%20-%20Pal%20128%20Kbps.mp3"
+  },
+  {
+   "id": "6d8f7e6626e8",
+   "file": "Zara Sa (Power Ballad) 128 Kbps.mp3",
+   "title": "Zara Sa (Power Ballad)",
+   "album": "Jannat",
+   "year": 2008,
+   "artists": [
+    "Pritam",
+    "KK"
+   ],
+   "artist": "Pritam",
+   "duration": 329,
+   "bitrate": 130,
+   "cover": "covers/6d8f7e6626e8.jpg",
+   "addedAt": 1791616446215,
+   "src": "KK/Zara%20Sa%20(Power%20Ballad)%20128%20Kbps.mp3"
+  },
+  {
+   "id": "b0b123fe3a5b",
+   "file": "Zara Sa Dil Mein De Jagah Tu_128-(DJMaza).mp3",
+   "title": "Zara Sa Dil Mein De Jagah Tu",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 304,
+   "bitrate": 139,
+   "cover": "covers/b0b123fe3a5b.jpg",
+   "addedAt": 1791616446235,
+   "src": "KK/Zara%20Sa%20Dil%20Mein%20De%20Jagah%20Tu_128-(DJMaza).mp3"
+  },
+  {
+   "id": "6740a409e3f7",
+   "file": "Zindagi Do Pal Ki - KK_128-(DJMaza).mp3",
+   "title": "Zindagi Do Pal Ki",
+   "album": "Best of K.K",
+   "year": 2022,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 258,
+   "bitrate": 133,
+   "cover": "covers/6740a409e3f7.jpg",
+   "addedAt": 1791616446252,
+   "src": "KK/Zindagi%20Do%20Pal%20Ki%20-%20KK_128-(DJMaza).mp3"
+  },
+  {
+   "id": "c213bf75414c",
+   "file": "Zindagi Hosh Mein.mp3",
+   "title": "Zindagi Hosh Mein",
+   "album": "Bas Ek Pal",
+   "year": 2006,
+   "artists": [
+    "KK",
+    "Zubeen Garg"
+   ],
+   "artist": "KK",
+   "duration": 277,
+   "bitrate": 130,
+   "cover": "covers/c213bf75414c.jpg",
+   "addedAt": 1791616446268,
+   "src": "KK/Zindagi%20Hosh%20Mein.mp3"
+  }
+ ],
+ "albums": [
+  {
+   "id": "4df33522fb",
+   "name": "Best of K.K",
+   "year": 2022,
+   "cover": "covers/4df33522fb.jpg",
+   "trackIds": [
+    "ca7c2730bf66",
+    "799789dcac16",
+    "aa0d3e9166e3",
+    "1e420026a657",
+    "33e17e14572f",
+    "4ebfefb4dae0",
+    "8a6bc7f003d5",
+    "8fe2e232c0f5",
+    "66468289878d",
+    "30433a251a33",
+    "b0b123fe3a5b",
+    "6740a409e3f7"
+   ]
+  },
+  {
+   "id": "613a9d3bde",
+   "name": "Friendship Day Mp3 Songs",
+   "year": 2020,
+   "cover": "covers/613a9d3bde.jpg",
+   "trackIds": [
+    "1c31042bfdde"
+   ]
+  },
+  {
+   "id": "0d99ceb925",
+   "name": "Love Aaj Kal (2020)",
+   "year": 2020,
+   "cover": "covers/0d99ceb925.jpg",
+   "trackIds": [
+    "4c3054684572"
+   ]
+  },
+  {
+   "id": "1fd5e357cf",
+   "name": "Sadak 2",
+   "year": 2020,
+   "cover": "covers/1fd5e357cf.jpg",
+   "trackIds": [
+    "55568970b196"
+   ]
+  },
+  {
+   "id": "9345221d75",
+   "name": "Chhichhore",
+   "year": 2019,
+   "cover": "covers/9345221d75.jpg",
+   "trackIds": [
+    "221ea29bf49c"
+   ]
+  },
+  {
+   "id": "138dca3326",
+   "name": "Jalebi",
+   "year": 2018,
+   "cover": "covers/138dca3326.jpg",
+   "trackIds": [
+    "b2fca2d14474"
+   ]
+  },
+  {
+   "id": "56e7aaadc7",
+   "name": "Bollywood Artist Unplugged",
+   "year": 2017,
+   "cover": "covers/56e7aaadc7.jpg",
+   "trackIds": [
+    "9cdd0dcd3f72"
+   ]
+  },
+  {
+   "id": "383e339816",
+   "name": "Jeena Isi Ka Naam Hai (2017)",
+   "year": 2017,
+   "cover": "covers/383e339816.jpg",
+   "trackIds": [
+    "acbbdc2064f6"
+   ]
+  },
+  {
+   "id": "5a970434bf",
+   "name": "Tubelight",
+   "year": 2017,
+   "cover": "covers/5a970434bf.jpg",
+   "trackIds": [
+    "17b1188124c1"
+   ]
+  },
+  {
+   "id": "22a790e054",
+   "name": "Raaz Reboot",
+   "year": 2016,
+   "cover": "covers/22a790e054.jpg",
+   "trackIds": [
+    "219a60d8e1bd"
+   ]
+  },
+  {
+   "id": "794e41e35e",
+   "name": "Airlift",
+   "year": 2015,
+   "cover": "covers/794e41e35e.jpg",
+   "trackIds": [
+    "39db7c6fcf4b"
+   ]
+  },
+  {
+   "id": "71dfcee1a1",
+   "name": "Roy",
+   "year": 2015,
+   "cover": "covers/71dfcee1a1.jpg",
+   "trackIds": [
+    "07c400c6e649"
+   ]
+  },
+  {
+   "id": "3fbebf336d",
+   "name": "Friendship Day Special Songs",
+   "year": 2014,
+   "cover": "covers/3fbebf336d.jpg",
+   "trackIds": [
+    "67f27977a912"
+   ]
+  },
+  {
+   "id": "e0f3379b4c",
+   "name": "Hate Story 2",
+   "year": 2014,
+   "cover": "covers/e0f3379b4c.jpg",
+   "trackIds": [
+    "637d5493a8b8"
+   ]
+  },
+  {
+   "id": "761473b201",
+   "name": "Heartless",
+   "year": 2014,
+   "cover": "covers/761473b201.jpg",
+   "trackIds": [
+    "a05655042201"
+   ]
+  },
+  {
+   "id": "1259f446c3",
+   "name": "3G",
+   "year": 2013,
+   "cover": "covers/1259f446c3.jpg",
+   "trackIds": [
+    "fb4cbfd4afef"
+   ]
+  },
+  {
+   "id": "3dfc70749f",
+   "name": "Aashiqui 2",
+   "year": 2013,
+   "cover": "covers/3dfc70749f.jpg",
+   "trackIds": [
+    "fd22612013bd"
+   ]
+  },
+  {
+   "id": "a503bec2b2",
+   "name": "Murder 3",
+   "year": 2013,
+   "cover": "covers/a503bec2b2.jpg",
+   "trackIds": [
+    "5fbb1d788c62"
+   ]
+  },
+  {
+   "id": "d1090b99c6",
+   "name": "Special 26",
+   "year": 2013,
+   "cover": "covers/d1090b99c6.jpg",
+   "trackIds": [
+    "328da07af0b8"
+   ]
+  },
+  {
+   "id": "f6754f9f41",
+   "name": "Yaariyan",
+   "year": 2013,
+   "cover": "covers/f6754f9f41.jpg",
+   "trackIds": [
+    "5d6e073bfcd3"
+   ]
+  },
+  {
+   "id": "9e5e082a7e",
+   "name": "1920 - Evil Returns",
+   "year": 2012,
+   "cover": "covers/9e5e082a7e.jpg",
+   "trackIds": [
+    "bd4f8cc5fcbb"
+   ]
+  },
+  {
+   "id": "f7e8d838d1",
+   "name": "Jannat 2",
+   "year": 2012,
+   "cover": "covers/f7e8d838d1.jpg",
+   "trackIds": [
+    "a20b7bf36847",
+    "7e9b7e039594"
+   ]
+  },
+  {
+   "id": "27740609df",
+   "name": "Kahaani",
+   "year": 2012,
+   "cover": "covers/27740609df.jpg",
+   "trackIds": [
+    "4b0642bf2778"
+   ]
+  },
+  {
+   "id": "2d3a170a7b",
+   "name": "Makkhi",
+   "year": 2012,
+   "cover": "covers/2d3a170a7b.jpg",
+   "trackIds": [
+    "91e78de16b53"
+   ]
+  },
+  {
+   "id": "968dca0cc3",
+   "name": "Raaz 3",
+   "year": 2012,
+   "cover": "covers/968dca0cc3.jpg",
+   "trackIds": [
+    "f172f3157738"
+   ]
+  },
+  {
+   "id": "77ac678258",
+   "name": "Zindagi Tere Naam",
+   "year": 2012,
+   "cover": "covers/77ac678258.jpg",
+   "trackIds": [
+    "5f913c8e7ad5"
+   ]
+  },
+  {
+   "id": "41f38a09cc",
+   "name": "Force",
+   "year": 2011,
+   "cover": "covers/41f38a09cc.jpg",
+   "trackIds": [
+    "b50219715b4a"
+   ]
+  },
+  {
+   "id": "2dcc9f33e6",
+   "name": "Khoon Maaf",
+   "year": 2011,
+   "cover": "covers/2dcc9f33e6.jpg",
+   "trackIds": [
+    "39f13b4dd1cc"
+   ]
+  },
+  {
+   "id": "20c7c5522f",
+   "name": "Ready",
+   "year": 2011,
+   "cover": "covers/20c7c5522f.jpg",
+   "trackIds": [
+    "a353b78b1a79"
+   ]
+  },
+  {
+   "id": "32a247971c",
+   "name": "Action Replayy",
+   "year": 2010,
+   "cover": "covers/32a247971c.jpg",
+   "trackIds": [
+    "7b7d65abc199"
+   ]
+  },
+  {
+   "id": "791d1e1b1c",
+   "name": "Crook",
+   "year": 2010,
+   "cover": "covers/791d1e1b1c.jpg",
+   "trackIds": [
+    "85c21b1feba4",
+    "59d6b00fd2fd",
+    "31e79306b873"
+   ]
+  },
+  {
+   "id": "5d27d3a318",
+   "name": "Karthik Calling Karthik",
+   "year": 2010,
+   "cover": "covers/5d27d3a318.jpg",
+   "trackIds": [
+    "9b7fa84f0df6"
+   ]
+  },
+  {
+   "id": "99e21731b6",
+   "name": "Khatta Meetha",
+   "year": 2010,
+   "cover": "covers/99e21731b6.jpg",
+   "trackIds": [
+    "2a3d8546ab16"
+   ]
+  },
+  {
+   "id": "479076718a",
+   "name": "Kites",
+   "year": 2010,
+   "cover": "covers/479076718a.jpg",
+   "trackIds": [
+    "e0295f679878"
+   ]
+  },
+  {
+   "id": "bb23b6faea",
+   "name": "Knockout",
+   "year": 2010,
+   "cover": "covers/bb23b6faea.jpg",
+   "trackIds": [
+    "d915772ae092"
+   ]
+  },
+  {
+   "id": "6ff4873456",
+   "name": "Mr. Singh Mrs. Mehta",
+   "year": 2010,
+   "cover": "covers/6ff4873456.jpg",
+   "trackIds": [
+    "c188b9264f83"
+   ]
+  },
+  {
+   "id": "d83b60dce3",
+   "name": "Once Upon A Time In Mumbaai",
+   "year": 2010,
+   "cover": "covers/d83b60dce3.jpg",
+   "trackIds": [
+    "c9e692cb57f5"
+   ]
+  },
+  {
+   "id": "4f7ad17a5b",
+   "name": "All The Best",
+   "year": 2009,
+   "cover": "covers/4f7ad17a5b.jpg",
+   "trackIds": [
+    "8d0e1e0467f2"
+   ]
+  },
+  {
+   "id": "3170ccebf3",
+   "name": "Jashnn",
+   "year": 2009,
+   "cover": "covers/3170ccebf3.jpg",
+   "trackIds": [
+    "59fb9b371d40",
+    "1d7968a8f83c"
+   ]
+  },
+  {
+   "id": "a27777cbdb",
+   "name": "Love Aaj Kal",
+   "year": 2009,
+   "cover": "covers/a27777cbdb.jpg",
+   "trackIds": [
+    "266bb93f90c7"
+   ]
+  },
+  {
+   "id": "3dddf7feb1",
+   "name": "New York",
+   "year": 2009,
+   "cover": "covers/3dddf7feb1.jpg",
+   "trackIds": [
+    "d4adf6bf8fb8"
+   ]
+  },
+  {
+   "id": "2eb261f012",
+   "name": "Sikandar",
+   "year": 2009,
+   "cover": "covers/2eb261f012.jpg",
+   "trackIds": [
+    "5220dd50b380"
+   ]
+  },
+  {
+   "id": "60049d26eb",
+   "name": "Tum Mile",
+   "year": 2009,
+   "cover": "covers/60049d26eb.jpg",
+   "trackIds": [
+    "932a2749f3ca",
+    "509fb1ca0782",
+    "d65bed830055"
+   ]
+  },
+  {
+   "id": "2b41324204",
+   "name": "Jannat",
+   "year": 2008,
+   "cover": "covers/2b41324204.jpg",
+   "trackIds": [
+    "564451bc06bc",
+    "6d8f7e6626e8"
+   ]
+  },
+  {
+   "id": "decb8ce3b4",
+   "name": "RAAZ - The Mystery Continues",
+   "year": 2008,
+   "cover": "covers/decb8ce3b4.jpg",
+   "trackIds": [
+    "0def04a93bbb"
+   ]
+  },
+  {
+   "id": "fea0e4b636",
+   "name": "Bhool Bhulaiyaa",
+   "year": 2007,
+   "cover": "covers/fea0e4b636.jpg",
+   "trackIds": [
+    "97a9bd80a998"
+   ]
+  },
+  {
+   "id": "d0059e12a8",
+   "name": "Dus Kahaniyaan",
+   "year": 2007,
+   "cover": "covers/d0059e12a8.jpg",
+   "trackIds": [
+    "76351029fdc9"
+   ]
+  },
+  {
+   "id": "b5d1ff0b83",
+   "name": "Life In A Metro",
+   "year": 2007,
+   "cover": "covers/b5d1ff0b83.jpg",
+   "trackIds": [
+    "112c97f72ff7"
+   ]
+  },
+  {
+   "id": "1a47c8f6f4",
+   "name": "MP3 - Mera Pehla Pehla Pyaar",
+   "year": 2007,
+   "cover": "covers/1a47c8f6f4.jpg",
+   "trackIds": [
+    "c5353f44ea8d"
+   ]
+  },
+  {
+   "id": "16c341ca0f",
+   "name": "Om Shanti Om (2007)",
+   "year": 2007,
+   "cover": "covers/16c341ca0f.jpg",
+   "trackIds": [
+    "5f91a82f96fd"
+   ]
+  },
+  {
+   "id": "6f70ba6bf4",
+   "name": "Raqeeb",
+   "year": 2007,
+   "cover": "covers/6f70ba6bf4.jpg",
+   "trackIds": [
+    "b8e26a52849b"
+   ]
+  },
+  {
+   "id": "57cf2698bf",
+   "name": "Showbiz",
+   "year": 2007,
+   "cover": "covers/57cf2698bf.jpg",
+   "trackIds": [
+    "bc87c21c3b72",
+    "81724bdb960b",
+    "bae98d8e7dec"
+   ]
+  },
+  {
+   "id": "4a6c8b99ec",
+   "name": "The Train",
+   "year": 2007,
+   "cover": "covers/4a6c8b99ec.jpg",
+   "trackIds": [
+    "f24b669d9afa"
+   ]
+  },
+  {
+   "id": "ca90f6df60",
+   "name": "Ahista Ahista (2006)",
+   "year": 2006,
+   "cover": "covers/ca90f6df60.jpg",
+   "trackIds": [
+    "d9a92f9fba8d"
+   ]
+  },
+  {
+   "id": "4366028f16",
+   "name": "Ankahee",
+   "year": 2006,
+   "cover": "covers/4366028f16.jpg",
+   "trackIds": [
+    "a337bc785b1b"
+   ]
+  },
+  {
+   "id": "5cedce2650",
+   "name": "Bas Ek Pal",
+   "year": 2006,
+   "cover": "covers/5cedce2650.jpg",
+   "trackIds": [
+    "23de8ae94841",
+    "c213bf75414c"
+   ]
+  },
+  {
+   "id": "9de8f4b71a",
+   "name": "Taxi No. 9211",
+   "year": 2006,
+   "cover": "covers/9de8f4b71a.jpg",
+   "trackIds": [
+    "cbcdb3b16086"
+   ]
+  },
+  {
+   "id": "01a6acda01",
+   "name": "Aashiq Banaya Aapne",
+   "year": 2005,
+   "cover": "covers/01a6acda01.jpg",
+   "trackIds": [
+    "a60f16471b47"
+   ]
+  },
+  {
+   "id": "090f36e24a",
+   "name": "Aksar",
+   "year": 2005,
+   "cover": "covers/090f36e24a.jpg",
+   "trackIds": [
+    "4d6c2b750f42"
+   ]
+  },
+  {
+   "id": "c95c293e46",
+   "name": "Dus",
+   "year": 2005,
+   "cover": "covers/c95c293e46.jpg",
+   "trackIds": [
+    "b766c674e1b0"
+   ]
+  },
+  {
+   "id": "ed6e4f1039",
+   "name": "Home Delivery",
+   "year": 2005,
+   "cover": "covers/ed6e4f1039.jpg",
+   "trackIds": [
+    "ab1ffa7264bf"
+   ]
+  },
+  {
+   "id": "a6e4ee0ebe",
+   "name": "Nazar",
+   "year": 2005,
+   "cover": "covers/a6e4ee0ebe.jpg",
+   "trackIds": [
+    "4a69ec95843e"
+   ]
+  },
+  {
+   "id": "facf8077f5",
+   "name": "Rog",
+   "year": 2005,
+   "cover": "covers/facf8077f5.jpg",
+   "trackIds": [
+    "ce6b64668fcc",
+    "6a0de57dfaad"
+   ]
+  },
+  {
+   "id": "f953c2cd75",
+   "name": "Zeher",
+   "year": 2005,
+   "cover": "covers/f953c2cd75.jpg",
+   "trackIds": [
+    "8598128fe072"
+   ]
+  },
+  {
+   "id": "96f57e3d76",
+   "name": "Main Hoon Na",
+   "year": 2004,
+   "cover": "covers/96f57e3d76.jpg",
+   "trackIds": [
+    "5045d301b99c"
+   ]
+  },
+  {
+   "id": "7560f4e802",
+   "name": "Taarzan - The Wonder Car",
+   "year": 2004,
+   "cover": "covers/7560f4e802.jpg",
+   "trackIds": [
+    "c667a2b73eb8"
+   ]
+  },
+  {
+   "id": "cfbfcc2677",
+   "name": "Jhankaar Beats",
+   "year": 2003,
+   "cover": "covers/cfbfcc2677.jpg",
+   "trackIds": [
+    "aa5df0ca9aa0",
+    "193d15215d32"
+   ]
+  },
+  {
+   "id": "cda952e4d4",
+   "name": "Jism (2003)",
+   "year": 2003,
+   "cover": "covers/cda952e4d4.jpg",
+   "trackIds": [
+    "f8504cf6e929"
+   ]
+  },
+  {
+   "id": "4b7c3cebf4",
+   "name": "Saaya",
+   "year": 2003,
+   "cover": "covers/4b7c3cebf4.jpg",
+   "trackIds": [
+    "0c258bde5b61"
+   ]
+  },
+  {
+   "id": "e5d1d08e29",
+   "name": "Tere Naam",
+   "year": 2003,
+   "cover": "covers/e5d1d08e29.jpg",
+   "trackIds": [
+    "87c49f73320f"
+   ]
+  },
+  {
+   "id": "18f4e088eb",
+   "name": "Humraaz (2002)",
+   "year": 2002,
+   "cover": "covers/18f4e088eb.jpg",
+   "trackIds": [
+    "701058fc95a8"
+   ]
+  },
+  {
+   "id": "ca6fab3496",
+   "name": "Mujhe Kucch Kehna Hai",
+   "year": 2001,
+   "cover": "covers/ca6fab3496.jpg",
+   "trackIds": [
+    "d9517acb90e4"
+   ]
+  },
+  {
+   "id": "ea65259b8b",
+   "name": "Pal",
+   "year": 1999,
+   "cover": "covers/ea65259b8b.jpg",
+   "trackIds": [
+    "cc08a1f9fa7d"
+   ]
+  },
+  {
+   "id": "9b06411efc",
+   "name": "Humsafar",
+   "year": null,
+   "cover": "covers/9b06411efc.jpg",
+   "trackIds": [
+    "683741fd037d"
+   ]
+  },
+  {
+   "id": "75f15dd099",
+   "name": "Paanch",
+   "year": null,
+   "cover": "covers/75f15dd099.jpg",
+   "trackIds": [
+    "28a0638ebf11"
+   ]
+  },
+  {
+   "id": "ee737ab282",
+   "name": "Singles",
+   "year": null,
+   "cover": null,
+   "trackIds": [
+    "83c04070c5cd"
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "file": "Khuda Jaane - K.K_128-(DJMaza).mp3",
+   "reason": "empty file (0 bytes)"
+  }
+ ],
+ "totalSeconds": 30728,
+ "staticBuild": true
+}
