@@ -32,6 +32,7 @@
 - [Screenshots](#screenshots)
 - [Built by measuring the real Spotify](#built-by-measuring-the-real-spotify)
 - [Architecture](#architecture)
+- [Flowcharts](#flowcharts)
 - [HTTP contract](#http-contract)
 - [Why Range requests matter](#why-range-requests-matter)
 - [Cleaning tag junk](#cleaning-tag-junk)
@@ -328,6 +329,120 @@ Those exact strings became the `title` and `aria-label` of every control in KKfy
       |-- data/stats.json      play counts -> "Your top songs"
       v
    public/KK/*.mp3   the one music folder, read-only, never modified
+```
+
+---
+
+## Flowcharts
+
+### 1. How the project was built
+
+```text
+ open.spotify.com ──REA / DevTools──► measured tokens + a11y strings
+                                       #121212  #1ed760  66 px  "Pause"
+                                                │
+                                                ▼
+ public/KK/*.mp3 ──ffprobe──► tags / duration / bitrate ──ffmpeg──► cover jpg
+        │                                                      │
+        └────────────────────► lib/scan.mjs ◄───────────────────┘
+                               buildLibrary() + clean()
+                                  │                  │
+                         node server.mjs     scripts/build-static.mjs
+                         local mode:         public/library.json +
+                         Range 206, state,   public/covers/*.jpg
+                         play counts                │
+                                  │                  ▼
+                                  └──────► public/ ◄┘
+                                  index.html app.css app.js icons.js
+                                           │
+                                  git push origin main
+                                           │
+                                           ▼
+                            Vercel build ~45 s ─► kkfy.vercel.app
+```
+
+### 2. Extracting the cover image
+
+```text
+public/KK/song.mp3
+      │
+      ▼
+ffprobe -show_entries stream=codec_type,codec_name
+      │
+      ├─ has a jpeg|png|bmp video stream? ── no ──► cover: null
+      │                                             └─► card shows the disc glyph
+      │                                                 (fix: embed the art into the
+      │                                                  mp3, next rescan picks it up)
+     yes
+      ▼
+data/covers/<id>.jpg already exists? ── yes ──► cache hit, ffmpeg skipped
+      │ no
+      ▼
+ffmpeg -i song.mp3 -an -vcodec copy -frames:v 1  data/covers/<id>.jpg
+      │
+      ▼   scripts/build-static.mjs
+public/covers/<id>.jpg   +   "cover": "covers/<id>.jpg" in library.json
+      │
+      ▼
+<img> on the card, the album header and the Now Playing sheet
+```
+
+### 3. Booting: making the UI
+
+```text
+GET / ─► index.html   (frame: top bar, sidebar, main, player bar, queue, sheet)
+             │
+             ▼
+        app.js boots
+             │
+             ▼
+    GET /api/library ──── answers? ──── yes ──► SERVER MODE
+             │ no                                  · state  → /api/state
+             ▼                                     · audio  → /api/stream/:id
+    GET /library.json                              · counts → POST /api/play
+             │
+             ▼
+        STATIC MODE (Vercel)
+             · state → localStorage
+             · audio → /KK/*.mp3 straight from the CDN
+             │
+             ▼
+     build state ─► hash router
+     #/  #/search  #/album/:id  #/playlist/:id  #/liked  #/collection
+             │
+             ▼
+     render the view ─► wire the <audio> engine ─► MediaSession metadata
+             │
+             ▼
+     CSS breakpoints: >820 px sidebar + grid │ ≤820 px tabs + drawer │
+                      ≤430 px single column, logo in the top bar
+```
+
+### 4. Playing a song
+
+```text
+click ▶ on a card
+    │
+    ▼
+play(track) ─► queue / shuffle / repeat pick the NEXT song (also on 'ended')
+    │
+    ▼
+audio.src = srcOf(track)
+    │         · server mode → /api/stream/<id>
+    │         · static mode → KK/<urlencoded file>.mp3
+    ▼
+GET with "Range: bytes=0-" ─► 206 Partial Content ─► sound comes out
+    │
+    ├─ drag to 3:00 ─► "Range: bytes=<offset>-" ─► fresh 206, instant seek
+    ├─ 'timeupdate' ─► progress bar follows (dragging writes audio.currentTime)
+    ├─ 'ended'      ─► next track in the queue
+    ├─ volume slider ─► audio.volume (0..1)
+    ▼
+MediaSession API ─► title / artist / artwork ─► lock screen + headset buttons
+    │
+    ▼
+server mode: POST /api/play {id} ─► data/stats.json ─► "Your top songs"
+static mode: playCount++ in localStorage
 ```
 
 ---
