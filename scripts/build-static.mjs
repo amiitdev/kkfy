@@ -55,11 +55,23 @@ const out = {
   totalSeconds: lib.totalSeconds,
   staticBuild: true,
 };
-await fs.writeFile(path.join(PUBLIC, "library.json"), JSON.stringify(out, null, 1));
+const FILE = path.join(PUBLIC, "library.json");
+const body = JSON.stringify(out, null, 1);
+
+// Idempotent on purpose: compare ignoring the timestamp, otherwise every run
+// rewrites "generatedAt" and ships a 1-line commit + a pointless Vercel rebuild.
+const stable = (s) => { const o = JSON.parse(s); delete o.generatedAt; return JSON.stringify(o); };
+let prev = null;
+try { prev = await fs.readFile(FILE, "utf8"); } catch {}
+const unchanged = prev !== null && stable(prev) === stable(body);
 
 console.log(`covers copied : ${copied}`);
 console.log(`tracks         : ${lib.tracks.length}`);
 console.log(`albums         : ${lib.albums.length}`);
 console.log(`skipped        : ${lib.skipped.length ? lib.skipped.map((s) => s.file).join(", ") : "none"}`);
-console.log(`written        : public/library.json (${(JSON.stringify(out).length / 1024).toFixed(0)} KB)`);
+console.log(unchanged
+  ? `written        : public/library.json (unchanged, kept previous timestamp)`
+  : `written        : public/library.json (${(body.length / 1024).toFixed(0)} KB)`);
 console.log(`took           : ${Date.now() - t0} ms`);
+
+if (!unchanged) await fs.writeFile(FILE, body);
