@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T10:09:50.333Z",
+ "generatedAt": "2026-10-22T10:17:27.808Z",
  "tracks": [
   {
    "id": "5f91a82f96fd",
@@ -527,16 +527,16 @@
    "id": "70e9563eb6c9",
    "file": "Ishq Jo Karein.mp3",
    "title": "Ishq Jo Karein",
-   "album": "Singles",
+   "album": "Prakash Electronic (Original Motion Picture Soundtrack) - EP",
    "year": null,
    "artists": [
     "KK"
    ],
    "artist": "KK",
    "duration": 300,
-   "bitrate": 192,
-   "cover": null,
-   "addedAt": 1792609181054,
+   "bitrate": 195,
+   "cover": "covers/70e9563eb6c9.jpg",
+   "addedAt": 1792664185952,
    "src": "KK/Ishq%20Jo%20Karein.mp3"
   },
   {
@@ -1189,16 +1189,16 @@
    "id": "83c04070c5cd",
    "file": "Saanson Ke.mp3",
    "title": "Saanson Ke",
-   "album": "Singles",
+   "album": "Raees (Original Motion Picture Soundtrack)",
    "year": null,
    "artists": [
     "KK"
    ],
    "artist": "KK",
    "duration": 243,
-   "bitrate": 192,
-   "cover": null,
-   "addedAt": 1791616445608,
+   "bitrate": 196,
+   "cover": "covers/83c04070c5cd.jpg",
+   "addedAt": 1792664226583,
    "src": "KK/Saanson%20Ke.mp3"
   },
   {
@@ -2411,12 +2411,20 @@
    ]
   },
   {
-   "id": "ee737ab282",
-   "name": "Singles",
+   "id": "7b3c1e3481",
+   "name": "Prakash Electronic (Original Motion Picture Soundtrack) - EP",
    "year": null,
-   "cover": null,
+   "cover": "covers/70e9563eb6c9.jpg",
    "trackIds": [
-    "70e9563eb6c9",
+    "70e9563eb6c9"
+   ]
+  },
+  {
+   "id": "2116113a11",
+   "name": "Raees (Original Motion Picture Soundtrack)",
+   "year": null,
+   "cover": "covers/83c04070c5cd.jpg",
+   "trackIds": [
     "83c04070c5cd"
    ]
   }
