@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21T18:39:56.141Z",
+ "generatedAt": "2026-10-22T10:02:10.943Z",
  "tracks": [
   {
    "id": "5f91a82f96fd",
@@ -522,6 +522,22 @@
    "cover": "covers/c9e692cb57f5.jpg",
    "addedAt": 1791616444648,
    "src": "KK/I%20Am%20In%20Love%20-%20Once%20Upon%20A%20Time%20In%20Mumbaai%20128%20Kbps.mp3"
+  },
+  {
+   "id": "70e9563eb6c9",
+   "file": "Ishq Jo Karein.mp3",
+   "title": "Ishq Jo Karein",
+   "album": "Singles",
+   "year": null,
+   "artists": [
+    "KK"
+   ],
+   "artist": "KK",
+   "duration": 300,
+   "bitrate": 192,
+   "cover": null,
+   "addedAt": 1792609181054,
+   "src": "KK/Ishq%20Jo%20Karein.mp3"
   },
   {
    "id": "b8e26a52849b",
@@ -2400,6 +2416,7 @@
    "year": null,
    "cover": null,
    "trackIds": [
+    "70e9563eb6c9",
     "83c04070c5cd"
    ]
   }
@@ -2410,6 +2427,6 @@
    "reason": "empty file (0 bytes)"
   }
  ],
- "totalSeconds": 31116,
+ "totalSeconds": 31416,
  "staticBuild": true
 }
