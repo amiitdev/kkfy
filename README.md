@@ -25,6 +25,7 @@
 ## Table of contents
 
 - [Features](#features)
+- [Tech stack](#tech-stack)
 - [Quick start](#quick-start)
 - [Live demo](#live-demo)
 - [Adding more songs later](#adding-more-songs-later)
@@ -56,6 +57,47 @@
 | **Made for the phone** | bottom tab bar, library drawer, full-screen Now Playing sheet |
 | **It remembers** | last song, volume, likes, playlists and play counts survive a reload |
 | **Honest about failures** | the one broken MP3 in the folder is reported, not hidden |
+
+---
+
+## Tech stack
+
+**9 building blocks, 1 runtime, 0 npm dependencies.** Every import in the
+project is a Node built-in - there is no `package.json` to `npm install`:
+
+```console
+$ ls package.json
+ls: cannot access 'package.json': No such file or directory
+
+$ grep -rhoE 'from "node:[a-z]+"' server.mjs lib scripts | sort -u
+from "node:child_process"
+from "node:crypto"
+from "node:fs"
+from "node:fs/promises"
+from "node:http"
+from "node:path"
+from "node:url"
+from "node:util"
+
+$ node -v && ffmpeg -version | head -1
+v24.19.0
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 The FFmpeg developers
+```
+
+| # | Layer | Technology | What it does in KKfy |
+|---|---|---|---|
+| 1 | Runtime | **Node.js 24** | one process serves the whole local app - no framework, no packages |
+| 2 | Backend | **`node:http`** (hand-rolled) | `/api/*`, HTTP `206` Range streaming, JSON state file - no Express |
+| 3 | Frontend | **Vanilla HTML / CSS / JS** | no React, no bundler: `index.html` + `app.css` + `app.js` + `icons.js` |
+| 4 | Design | **CSS custom properties** | Spotify's palette and measurements (66 px player bar, 64 px top bar, `#1ed760`) measured off the real site |
+| 5 | Playback | **HTMLAudioElement + MediaSession API** | the `<audio>` engine, seeking via Range requests, OS media keys and lock-screen controls |
+| 6 | Media tooling | **ffmpeg / ffprobe 6.1** | reads ID3 tags, duration, bitrate; extracts embedded cover art; reports the broken MP3 |
+| 7 | Storage | **JSON + `localStorage`** | `library.json` is the index; likes, queue, playlists and play counts live in `localStorage` when hosted, in `data/` files locally |
+| 8 | Automation | **Bash** (`update-songs.sh`) | scan → diff → rescan → commit → push for every new song |
+| 9 | Hosting | **GitHub + Vercel** | public repo `amiitdev/kkfy`, git-based deploys to `kkfy.vercel.app` in ~45 s, CDN answers `206` natively |
+
+Used while building it, not shipped: `curl` (Range/206 checks), Playwright
+(screenshots), and REA against the live Spotify site to measure its layout.
 
 ---
 
