@@ -34,6 +34,7 @@ const API = { server: false, state: "kkfy:state", stats: "kkfy:stats" };
 
 const localState = () => ({
   liked: [], playlists: [], volume: 0.8, shuffle: false, repeat: "off", lastTrackId: null,
+  queue: [], qpos: -1, position: 0, wasPlaying: false,
 });
 
 async function firstOk(paths) {
@@ -96,6 +97,32 @@ function save() {
       console.warn("state not saved", e);
     }
   }, 400);
+}
+
+/**
+ * Mirror the live player into the persisted user state.  This is what makes a
+ * reload (or Android discarding the tab mid-run) land back on the same song,
+ * at the same second, with the same queue — instead of only the last track.
+ */
+function syncPlayback(persist = true) {
+  S.user.queue = S.queue.slice();
+  S.user.qpos = S.qpos;
+  S.user.position = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+  S.user.wasPlaying = !audio.paused;
+  if (persist) save();
+}
+
+let lastPosSave = 0;
+function persistPosition() {
+  const now = Date.now();
+  if (now - lastPosSave < 5000) return;      // once every 5 s is plenty
+  lastPosSave = now;
+  syncPlayback();
+}
+
+function flushPlayback() {
+  syncPlayback(false);
+  lsSet(API.state, S.user);                   // synchronous: safe on pagehide
 }
 
 /* ---------------------------------------------------------------- player --- */
@@ -221,7 +248,7 @@ function loadCurrent(autoplay = true) {
   S.pendingResume = null;
   audio.src = srcOf(t);
   S.user.lastTrackId = t.id;
-  save();
+  syncPlayback();
   paintNowPlaying();
   renderQueue();
   if (autoplay) tryPlay("track");
@@ -846,11 +873,13 @@ function wireEvents() {
   audio.addEventListener("play", () => {
     S.pendingResume = null;
     setPlaybackState("playing");
+    syncPlayback();
     paintPlayButton(true);
   });
   audio.addEventListener("pause", () => {
     // "pause" also fires when the source changes mid-load; ignore that blip.
     if (!audio.ended) setPlaybackState("paused");
+    syncPlayback();
     paintPlayButton(false);
   });
   audio.addEventListener("ended", () => {
@@ -867,6 +896,7 @@ function wireEvents() {
     for (const el of all('[data-act="seek"]')) { el.value = pct; setFill(el, pct); }
     $("#cur-time").textContent = fmt(audio.currentTime);
     $("#sheet-cur").textContent = fmt(audio.currentTime);
+    persistPosition();
 
     // Background safety net: a hidden/backgrounded tab can delay or drop the
     // native "ended" event.  Whatever reports the end first wins; maybeAdvance
@@ -940,7 +970,7 @@ async function boot() {
   let user = { ...localState(), ...lsGet(API.state, {}) };
   let stats = lsGet(API.stats, {});
   if (API.server) {
-    try { user = await (await fetch("/api/state")).json(); } catch { /* keep local */ }
+    try { user = { ...user, ...(await (await fetch("/api/state")).json()) }; } catch { /* keep local */ }
     try { stats = await (await fetch("/api/stats")).json(); } catch { /* keep local */ }
   }
 
@@ -957,8 +987,39 @@ async function boot() {
   render();
   renderQueue();
 
-  if (S.user.lastTrackId && S.byId.has(S.user.lastTrackId)) {
-    // restore the last song without autoplaying it (browsers block that anyway)
+  // Restore the whole listening session: queue, position and play intent.
+  // Browsers usually block audio on load, so tryPlay() falls back to resuming
+  // on the first tap — which is exactly when you open the app after a run.
+  const savedQueue = Array.isArray(S.user.queue)
+    ? S.user.queue.filter((id) => S.byId.has(id)) : [];
+  const savedPos = Math.max(0, Number(S.user.position) || 0);
+  const resume = !!S.user.wasPlaying;
+
+  if (savedQueue.length) {
+    S.queue = savedQueue;
+    S.qpos = Math.max(0, Math.min(Number(S.user.qpos) || 0, S.queue.length - 1));
+    const t = track(S.queue[S.qpos]);
+    const seek = () => {
+      if (savedPos > 1 && Number.isFinite(audio.duration) && savedPos < audio.duration - 1) {
+        audio.currentTime = savedPos;
+      }
+      audio.removeEventListener("loadedmetadata", seek);
+    };
+    // Attach before src: a cached file can fire loadedmetadata immediately.
+    audio.addEventListener("loadedmetadata", seek);
+    audio.src = srcOf(t);
+    S.user.lastTrackId = t.id;
+    S.user.queue = S.queue.slice();
+    S.user.qpos = S.qpos;
+    S.user.position = savedPos;
+    S.advancedFor = null;
+    paintNowPlaying();
+    renderQueue();
+    setPlaybackState("paused");
+    paintPlayButton(false);
+    if (resume) tryPlay("restore");
+  } else if (S.user.lastTrackId && S.byId.has(S.user.lastTrackId)) {
+    // older state (or a fresh install): restore just the last song, paused
     const same = lib.albums.find((a) => a.trackIds.includes(S.user.lastTrackId));
     S.queue = same ? same.trackIds : [S.user.lastTrackId];
     S.qpos = Math.max(0, S.queue.indexOf(S.user.lastTrackId));
@@ -968,7 +1029,20 @@ async function boot() {
     setPlaybackState("paused");
     paintPlayButton(false);
   }
+
+  // Service worker: offline app shell + instant startup.  Insecure origins
+  // (e.g. http://192.168.x.x) simply reject; the app keeps working as before.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }
 }
+
+// Flush the exact position when the tab is hidden or closed — Android can
+// discard a background tab without warning, and periodic saves only go every 5 s.
+window.addEventListener("pagehide", flushPlayback);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") flushPlayback();
+});
 
 boot().catch((e) => {
   $("#view").innerHTML = `<p class="empty"><h3>Could not start</h3>${esc(e.message)}</p>`;

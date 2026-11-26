@@ -56,6 +56,10 @@ const emptyState = () => ({
   shuffle: false,
   repeat: "off", // off | all | one
   lastTrackId: null,
+  queue: [],        // full listening session, so a reload resumes where you were
+  qpos: -1,
+  position: 0,      // seconds into the current track
+  wasPlaying: false,
 });
 
 const byId = (id) => library.tracks.find((t) => t.id === id) || null;
@@ -67,6 +71,7 @@ const MIME = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
+  ".webmanifest": "application/manifest+json",
   ".svg": "image/svg+xml",
   ".png": "image/png",
   ".jpg": "image/jpeg",
@@ -199,6 +204,10 @@ const server = http.createServer(async (req, res) => {
       );
       // only ids that still exist survive a rescan
       safe.liked = safe.liked.filter((id) => byId(id));
+      safe.queue = (Array.isArray(safe.queue) ? safe.queue : []).filter((id) => byId(id));
+      safe.qpos = Math.max(-1, Math.min(safe.queue.length - 1, Number(safe.qpos) || 0));
+      safe.position = Math.max(0, Number(safe.position) || 0);
+      safe.wasPlaying = Boolean(safe.wasPlaying);
       safe.playlists = safe.playlists.map((pl) => ({
         id: pl.id,
         name: String(pl.name).slice(0, 60),
