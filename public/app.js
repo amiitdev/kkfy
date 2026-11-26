@@ -21,6 +21,8 @@ const S = {
   libFilter: "all",
   saveTimer: null,
   toastTimer: null,
+  advancedFor: null,   // id we already advanced away from (guards ended + watchdog)
+  pendingResume: null, // play() was blocked by the browser; retry on a gesture
 };
 
 /* --------------------------------------------------------------- helpers --- */
@@ -98,6 +100,114 @@ function save() {
 
 /* ---------------------------------------------------------------- player --- */
 
+/**
+ * Mobile browsers (Chrome Android especially) sometimes refuse a fresh
+ * audio.play() when the tab is in the background / the screen is locked —
+ * even after the user tapped play once.  Never let that rejection kill the
+ * queue: remember it and retry the moment the screen comes back or the user
+ * touches the page, which is a valid user gesture again.
+ */
+/**
+ * A tiny silent WAV built in memory.  Mobile browsers suspend a page's JS as
+ * soon as all audio stops, which means the `ended` handler can never fire
+ * while the phone is in your pocket.  A muted, looping silent <audio> keeps
+ * the render process alive across the gap between two tracks.
+ */
+const SILENT_WAV = (() => {
+  const rate = 8000, n = 2000; // 0.25 s of silence, looped
+  const buf = new ArrayBuffer(44 + n * 2);
+  const v = new DataView(buf);
+  const ascii = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+  ascii(0, "RIFF"); v.setUint32(4, 36 + n * 2, true);
+  ascii(8, "WAVEfmt "); v.setUint32(16, 16, true); v.setUint16(20, 1, true);
+  v.setUint16(22, 1, true); v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true);
+  v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+  ascii(36, "data"); v.setUint32(40, n * 2, true);
+  return URL.createObjectURL(new Blob([buf], { type: "audio/wav" }));
+})();
+
+let keepAliveStarted = false;
+function startKeepAlive() {
+  if (keepAliveStarted) return;
+  const ka = $("#keepalive");
+  if (!ka) return;
+  ka.src = SILENT_WAV;
+  ka.volume = 0;
+  ka.play().catch(() => { keepAliveStarted = false; }); // retry on the next tap
+  keepAliveStarted = true;
+}
+
+let resumeArmed = false;
+function armResumeRetry() {
+  if (resumeArmed) return;
+  resumeArmed = true;
+  const retry = () => {
+    if (!S.pendingResume || document.visibilityState !== "visible") return;
+    cleanup();
+    tryPlay("resume");
+  };
+  const cleanup = () => {
+    document.removeEventListener("visibilitychange", retry);
+    document.removeEventListener("pointerdown", retry);
+    resumeArmed = false;
+  };
+  document.addEventListener("visibilitychange", retry);
+  document.addEventListener("pointerdown", retry);
+}
+
+function tryPlay(reason = "auto") {
+  S.pendingResume = null;
+  startKeepAlive();
+  let p;
+  try { p = audio.play(); } catch (e) { p = Promise.reject(e); }
+  if (p && typeof p.catch === "function") {
+    p.catch((e) => {
+      if (e && e.name === "NotAllowedError") {
+        // Autoplay policy blocked us (background tab / locked screen).
+        // Keep the queue where it is and wait for a gesture to resume.
+        S.pendingResume = reason;
+        armResumeRetry();
+      } else {
+        toast(`Cannot play: ${e.message || e}`);
+      }
+    });
+  }
+}
+
+/** Register OS/lock-screen/headphone controls exactly once, not per track. */
+function setupMediaSession() {
+  if (!("mediaSession" in navigator)) return;
+  const ms = navigator.mediaSession;
+  const handler = (action, fn) => {
+    try { ms.setActionHandler(action, fn); } catch { /* action unsupported here */ }
+  };
+  handler("play", () => tryPlay("media-key"));
+  handler("pause", () => audio.pause());
+  handler("nexttrack", () => next());
+  handler("previoustrack", prev);
+  handler("seekto", (d) => {
+    if (Number.isFinite(d.seekTime) && audio.duration) {
+      audio.currentTime = Math.min(audio.duration, Math.max(0, d.seekTime));
+    }
+  });
+  handler("seekbackward", (d) => { audio.currentTime = Math.max(0, audio.currentTime - (d.seekOffset || 10)); });
+  handler("seekforward", (d) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + (d.seekOffset || 10)); });
+  handler("stop", () => { stop(); setPlaybackState("none"); });
+}
+
+const setPlaybackState = (state) => {
+  if (!("mediaSession" in navigator)) return;
+  try { navigator.mediaSession.playbackState = state; } catch { /* not supported */ }
+};
+
+/** Advance at most once per track, no matter who reports the end of the song. */
+function maybeAdvance(reason) {
+  const cur = S.queue[S.qpos];
+  if (!cur || S.advancedFor === cur) return;
+  S.advancedFor = cur;
+  next(true, reason);
+}
+
 function playQueue(ids, pos = 0, autoplay = true) {
   S.queue = ids.slice();
   S.qpos = pos;
@@ -107,18 +217,20 @@ function playQueue(ids, pos = 0, autoplay = true) {
 function loadCurrent(autoplay = true) {
   const t = track(S.queue[S.qpos]);
   if (!t) return;
+  S.advancedFor = null;               // a fresh source starts a fresh track
+  S.pendingResume = null;
   audio.src = srcOf(t);
   S.user.lastTrackId = t.id;
   save();
   paintNowPlaying();
   renderQueue();
-  if (autoplay) audio.play().catch((e) => toast(`Cannot play: ${e.message}`));
-  else paintPlayButton(false);
+  if (autoplay) tryPlay("track");
+  else { setPlaybackState("paused"); paintPlayButton(false); }
 }
 
 function togglePlay() {
   if (!S.queue.length) return playQueue(S.lib.tracks.map((t) => t.id), 0);
-  if (audio.paused) audio.play().catch((e) => toast(e.message));
+  if (audio.paused) tryPlay("button");
   else audio.pause();
 }
 
@@ -129,16 +241,28 @@ function pickShuffled() {
   return S.queue.indexOf(rest[Math.floor(Math.random() * rest.length)]);
 }
 
-function next(auto = false) {
+function next(auto = false, reason = "manual") {
   if (!S.queue.length) return;
-  if (S.user.repeat === "one" && auto) return void (audio.currentTime = 0) || audio.play();
+  if (S.user.repeat === "one" && auto) {
+    // Replay the same song: clear the guard so its next end can advance again.
+    S.advancedFor = null;
+    audio.currentTime = 0;
+    tryPlay("repeat-one");
+    return;
+  }
   if (S.user.shuffle) {
     if (S.qpos >= S.queue.length - 1 && S.user.repeat !== "all") return stop();
-    return void (S.qpos = pickShuffled(), loadCurrent(true));
+    S.qpos = pickShuffled();
+  } else if (S.qpos < S.queue.length - 1) {
+    S.qpos++;
+  } else if (S.user.repeat === "all") {
+    S.qpos = 0;
+  } else if (auto) {
+    return stop();
+  } else {
+    return; // manual next at the very end of the queue: nothing to do
   }
-  if (S.qpos < S.queue.length - 1) return void (S.qpos++, loadCurrent(true));
-  if (S.user.repeat === "all") return void (S.qpos = 0, loadCurrent(true));
-  if (auto) stop();
+  loadCurrent(true);
 }
 
 function prev() {
@@ -151,6 +275,9 @@ function prev() {
 function stop() {
   audio.pause();
   audio.currentTime = 0;
+  S.pendingResume = null;
+  S.advancedFor = null;
+  setPlaybackState("none");
   paintPlayButton(false);
 }
 
@@ -714,24 +841,41 @@ function wireEvents() {
   };
 
   /* the <audio> element is the whole engine — every UI pixel follows it */
-  audio.addEventListener("play", () => paintPlayButton(true));
-  audio.addEventListener("pause", () => paintPlayButton(false));
-  audio.addEventListener("ended", () => next(true));
+  setupMediaSession();
+
+  audio.addEventListener("play", () => {
+    S.pendingResume = null;
+    setPlaybackState("playing");
+    paintPlayButton(true);
+  });
+  audio.addEventListener("pause", () => {
+    // "pause" also fires when the source changes mid-load; ignore that blip.
+    if (!audio.ended) setPlaybackState("paused");
+    paintPlayButton(false);
+  });
+  audio.addEventListener("ended", () => {
+    // A queued "ended" from the previous source can land after we already
+    // swapped tracks; ignore it so we never skip two songs at once.
+    if (!audio.ended) return;
+    maybeAdvance("ended");
+  });
   audio.addEventListener("loadedmetadata", () => {
     for (const el of ["#dur-time", "#sheet-dur"]) $(el).textContent = fmt(audio.duration);
-    const t = track(S.queue[S.qpos]);
-    if (t && "mediaSession" in navigator) {
-      navigator.mediaSession.setActionHandler("play", () => audio.play());
-      navigator.mediaSession.setActionHandler("pause", () => audio.pause());
-      navigator.mediaSession.setActionHandler("nexttrack", () => next());
-      navigator.mediaSession.setActionHandler("previoustrack", prev);
-    }
   });
   audio.addEventListener("timeupdate", () => {
     const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
     for (const el of all('[data-act="seek"]')) { el.value = pct; setFill(el, pct); }
     $("#cur-time").textContent = fmt(audio.currentTime);
     $("#sheet-cur").textContent = fmt(audio.currentTime);
+
+    // Background safety net: a hidden/backgrounded tab can delay or drop the
+    // native "ended" event.  Whatever reports the end first wins; maybeAdvance
+    // makes sure the queue only moves on once per song.
+    const d = audio.duration;
+    if (S.queue.length && !audio.paused && Number.isFinite(d) && d > 0 &&
+        audio.currentTime >= d - 0.25) {
+      maybeAdvance("watchdog");
+    }
   });
   audio.addEventListener("playing", () => {
     const t = track(S.queue[S.qpos]);
@@ -819,7 +963,9 @@ async function boot() {
     S.queue = same ? same.trackIds : [S.user.lastTrackId];
     S.qpos = Math.max(0, S.queue.indexOf(S.user.lastTrackId));
     audio.src = srcOf(S.byId.get(S.user.lastTrackId));
+    S.advancedFor = null;
     paintNowPlaying();
+    setPlaybackState("paused");
     paintPlayButton(false);
   }
 }

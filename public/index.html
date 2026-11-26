@@ -138,6 +138,9 @@
   </section>
 
   <audio id="audio" preload="metadata"></audio>
+  <!-- muted, silent, looping: keeps the page's JS alive while the screen is
+       off so the "ended" handler can start the next song on mobile browsers -->
+  <audio id="keepalive" loop muted preload="auto"></audio>
   <div class="toast" id="toast" hidden></div>
 
   <script src="/icons.js"></script>
